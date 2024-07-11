@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring DT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="vendor/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- bagian navbar -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logosam_white.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Sentosa Abadi Mining 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+
+              </ul>
+            </div>
+          </nav>
+    </div>    <!--end bagian navbar -->
+
+<!-- bagian wrap chart -->
+  <div class="d-flex flex-wrap">
+     
+     <!--batas ROWs  -->
+  <div class="row">
+    <!-- batas rows -->
+
+    <div class="col-md-3">
+      <!-- batas awal cards -->
+  <div class="card" >
+    <div class="card-body">
+      <h5 class="card-title">Kontrak KBM  <span class="text-muted small pt-2 ps-1">| 1</span></h5>
+    <!-- batas chart start -->
+
+<div style="width: 300px; height: auto;">
+    <canvas id="chartMKBM"></canvas>
+  </div>
+  <script>
+    const ctx = document.getElementById('chartMKBM');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Accident', 'NoProd', 'Breakdown', 'Ready'],
+        datasets: [{
+          label: '',
+          data: [12, 19, 3, 5],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(210, 210, 210)',
+            'rgb(255, 206, 86)',
+            'rgb(69, 196, 49)',
+         ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+    </div>
+  </div>
+<!-- batas end cards -->
+    </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Kontrak BDM  <span class="text-muted small pt-2 ps-1">| 2</span></h5>
+  <!-- batas chart start -->
+  <div style="width: 300px; height: auto;">
+  <canvas id="chartMBDM"></canvas>
+</div>
+<script>
+  const ctx2 = document.getElementById('chartMBDM');
+
+  new Chart(ctx2, {
+    type: 'bar',
+    data: {
+      labels: ['Accident', 'NoProd', 'Breakdown', 'Ready'],
+        datasets: [{
+          label: '',
+          data: [12, 19, 3, 5],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(210, 210, 210)',
+            'rgb(255, 206, 86)',
+            'rgb(69, 196, 49)',
+         ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+
+<div class="col-md-3">
+  <!-- batas awal cards -->
+<div class="card" >
+<div class="card-body">
+  <h5 class="card-title">Rental BDM  <span class="text-muted small pt-2 ps-1">| 3</span></h5>
+<!-- batas chart start -->
+<div style="width: 300px; height: auto;">
+<canvas id="chartRBDM"></canvas>
+</div>
+<script>
+const ctx3 = document.getElementById('chartRBDM');
+
+new Chart(ctx3, {
+  type: 'bar',
+  data: {
+    labels: ['Accident', 'NoProd', 'Breakdown', 'Ready'],
+        datasets: [{
+          label: '',
+          data: [12, 19, 3, 5],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(210, 210, 210)',
+            'rgb(255, 206, 86)',
+            'rgb(69, 196, 49)',
+         ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+</script>
+
+</div>
+</div>
+<!-- batas end cards -->
+</div> 
+<!-- batas ROW -->
+
+<div class="col-md-3">
+  <!-- batas awal cards -->
+<div class="card" >
+<div class="card-body">
+  <h5 class="card-title">Rental KBM  <span class="text-muted small pt-2 ps-1">| 4</span></h5>
+<!-- batas chart start -->
+<div style="width: 300px; height: auto;">
+<canvas id="chartRKBM"></canvas>
+</div>
+<script>
+const ctx4 = document.getElementById('chartRKBM');
+
+new Chart(ctx4, {
+  type: 'bar',
+  data: {
+    labels: ['Accident', 'NoProd', 'Breakdown', 'Ready'],
+        datasets: [{
+          label: '',
+          data: [12, 19, 3, 5],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(210, 210, 210)',
+            'rgb(255, 206, 86)',
+            'rgb(69, 196, 49)',
+         ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+</script>
+
+</div>
+</div>
+<!-- batas end cards -->
+</div> 
+<!-- batas ROW -->
+
+  </div>
+  <!-- batas end row chart -->
+
+  </div>
+  <!-- wrap -->
+
+
+
+
+
+  <!--batas ROWs  -->
+<div class="row">
+    <!-- end rows -->
+    <div class="col-md-3 mt-5">
+      <!-- batas awal cards -->
+  <div class="card" >
+    <div class="card-body">
+      <h5 class="card-title">Kontrak KBM  <span class="text-muted small pt-2 ps-1">| 2</span></h5>
+      <!-- table -->
+      <table class="table table-borderless table-sm">
+
+        <tbody>
+
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+          <tr>
+            <td>DT-342</td>
+            <td>16:40</td>
+            <td> <button type="button" class="btn btn-warning"></button></td>
+          </tr>
+          <tr>
+            <td>DT-341</td>
+            <td>17:00</td>
+            <td> <button type="button" class="btn btn-success"></button></td>
+          </tr>
+
+
+
+
+        </tbody>
+      </table>  
+
+    </div>
+  </div>
+<!-- batas end cards -->
+    </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Kontrak BDM</h5>
+    <!-- table -->
+    <table class="table table-borderless table-sm">
+      <tbody>
+
+        <tr>
+          <td>DT-310</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-318</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-324</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-326</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-330</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-331</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-333</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-334</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-335</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-336</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-337</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-338</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-339</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-343</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-344</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-346</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-347</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-348</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-349</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-353</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-354</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-355</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-360</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+
+      </tbody>
+    </table>  
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Rental KBM</h5>
+    <!-- table -->
+    <table class="table table-borderless table-sm">
+      <tbody>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+      </tbody>
+    </table>  
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+<div class="col-md-3 mt-5">
+    <!-- batas awal cards -->
+<div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Rental BDM</h5>
+    <!-- table -->
+    <table class="table table-borderless table-sm">
+      <tbody>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+        <tr>
+          <td>DT-342</td>
+          <td>16:40</td>
+          <td> <button type="button" class="btn btn-warning"></button></td>
+        </tr>
+        <tr>
+          <td>DT-341</td>
+          <td>17:00</td>
+          <td> <button type="button" class="btn btn-success"></button></td>
+        </tr>
+      </tbody>
+    </table>  
+
+  </div>
+</div>
+<!-- batas end cards -->
+  </div> 
+<!-- batas ROW -->
+
+</div>
+
+
+
+
+ 
+
+</body>
+</html>

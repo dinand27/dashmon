@@ -1,0 +1,424 @@
+CRITICAL - 2024-07-02 02:12:25 --> ErrorException: Undefined variable $detail
+in APPPATH\Views\home.php on line 237.
+ 1 APPPATH\Views\home.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detail', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\home.php', 237)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(99): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 03:52:54 --> Error: Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+in APPPATH\Models\HomeModel.php on line 17.
+ 1 APPPATH\Controllers\Home.php(107): App\Models\HomeModel->tampil_semua('project')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 03:54:17 --> Error: Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+in APPPATH\Models\HomeModel.php on line 17.
+ 1 APPPATH\Controllers\Home.php(107): App\Models\HomeModel->tampil_semua('project')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 06:35:28 --> BadMethodCallException: Call to undefined method App\Models\HomeModel::tampil_semua
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(107): CodeIgniter\Model->__call('tampil_semua', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 06:35:29 --> BadMethodCallException: Call to undefined method App\Models\HomeModel::tampil_semua
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(107): CodeIgniter\Model->__call('tampil_semua', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 06:35:29 --> BadMethodCallException: Call to undefined method App\Models\HomeModel::tampil_semua
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(107): CodeIgniter\Model->__call('tampil_semua', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 06:35:29 --> BadMethodCallException: Call to undefined method App\Models\HomeModel::tampil_semua
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(107): CodeIgniter\Model->__call('tampil_semua', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 06:35:29 --> BadMethodCallException: Call to undefined method App\Models\HomeModel::tampil_semua
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(107): CodeIgniter\Model->__call('tampil_semua', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 06:35:29 --> BadMethodCallException: Call to undefined method App\Models\HomeModel::tampil_semua
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Home.php(107): CodeIgniter\Model->__call('tampil_semua', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 06:58:11 --> ErrorException: Undefined variable $keyword
+in APPPATH\Views\tampil_project.php on line 7.
+ 1 APPPATH\Views\tampil_project.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $keyword', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampil_project.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampil_project.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampil_project', [], true)
+ 5 APPPATH\Controllers\Home.php(115): view('tampil_project', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 06:58:51 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\tampil_project.php on line 34.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampil_project', [], true)
+ 4 APPPATH\Controllers\Home.php(115): view('tampil_project', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+ERROR - 2024-07-02 07:17:23 --> mysqli_sql_exception: Unknown column '$param' in 'where clause' in C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\dash_mon_dt\app\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+#5 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\dash_mon_dt\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\dash_mon_dt\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2024-07-02 07:17:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '$param' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project where id= $param')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 07:17:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '$param' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM project where id= $param')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM project where id= $param')
+ 3 APPPATH\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project where id= $param')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 07:17:23 --> [Caused by] mysqli_sql_exception: Unknown column '$param' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM project where id= $param', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM project where id= $param')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM project where id= $param')
+ 4 APPPATH\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project where id= $param')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_data_project()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 07:26:20 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::tampil_project(), 0 passed in C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 104.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_project()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+ERROR - 2024-07-02 07:26:36 --> mysqli_sql_exception: Unknown column '$param' in 'where clause' in C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\dash_mon_dt\app\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(941): App\Controllers\Home->tampil_project('2')
+#5 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\dash_mon_dt\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\dash_mon_dt\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2024-07-02 07:26:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '$param' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project where id=$param ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_project('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 07:26:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '$param' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM project where id=$param ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM project where id=$param ')
+ 3 APPPATH\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project where id=$param ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_project('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 07:26:36 --> [Caused by] mysqli_sql_exception: Unknown column '$param' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM project where id=$param ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM project where id=$param ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM project where id=$param ')
+ 4 APPPATH\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project where id=$param ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_project('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 07:27:54 --> ErrorException: Attempt to read property "id" on null
+in APPPATH\Views\chartedit.php on line 6.
+ 1 APPPATH\Views\chartedit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\chartedit.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\chartedit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('chartedit', [], true)
+ 5 APPPATH\Controllers\Equipment.php(217): view('chartedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Equipment->formEditchart('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipment))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 07:34:32 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::tampil_project(), 0 passed in C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 104.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_project()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+ERROR - 2024-07-02 07:34:50 --> mysqli_sql_exception: Unknown column '$param' in 'where clause' in C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\dash_mon_dt\app\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(941): App\Controllers\Home->tampil_project()
+#5 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\dash_mon_dt\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\dash_mon_dt\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2024-07-02 07:34:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '$param' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project where id=$param ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_project()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 07:34:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '$param' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM project where id=$param ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM project where id=$param ')
+ 3 APPPATH\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project where id=$param ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_project()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 07:34:50 --> [Caused by] mysqli_sql_exception: Unknown column '$param' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM project where id=$param ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM project where id=$param ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM project where id=$param ')
+ 4 APPPATH\Controllers\Home.php(110): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project where id=$param ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->tampil_project()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:06:27 --> TypeError: view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\dash_mon_dt\app\Controllers\Param.php on line 9
+in SYSTEMPATH\Common.php on line 1166.
+ 1 APPPATH\Controllers\Param.php(9): view('getparam', 'Kontrak BDM')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:09:55 --> ErrorException: Attempt to read property "id" on array
+in APPPATH\Views\getparam.php on line 17.
+ 1 APPPATH\Views\getparam.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\getparam.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\getparam.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('getparam', [], true)
+ 5 APPPATH\Controllers\Param.php(12): view('getparam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:16:56 --> ErrorException: Undefined variable $data
+in APPPATH\Views\tampilsemua.php on line 17.
+ 1 APPPATH\Views\tampilsemua.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampilsemua.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampilsemua.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampilsemua', [], true)
+ 5 APPPATH\Controllers\Param.php(21): view('tampilsemua', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampilAll()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:17:46 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\tampilsemua.php on line 17.
+ 1 APPPATH\Views\tampilsemua.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampilsemua.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampilsemua.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampilsemua', [], true)
+ 5 APPPATH\Controllers\Param.php(25): view('tampilsemua', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampilAll()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:18:34 --> ErrorException: Undefined array key "id"
+in APPPATH\Views\tampilsemua.php on line 17.
+ 1 APPPATH\Views\tampilsemua.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampilsemua.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampilsemua.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampilsemua', [], true)
+ 5 APPPATH\Controllers\Param.php(25): view('tampilsemua', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampilAll()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:19:44 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\tampilsemua.php on line 18.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampilsemua', [], true)
+ 4 APPPATH\Controllers\Param.php(25): view('tampilsemua', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampilAll()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:20:05 --> ErrorException: Undefined property: stdClass::$nm_project
+in APPPATH\Views\tampilsemua.php on line 19.
+ 1 APPPATH\Views\tampilsemua.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nm_project', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampilsemua.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\dash_mon_dt\\app\\Views\\tampilsemua.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampilsemua', [], true)
+ 5 APPPATH\Controllers\Param.php(25): view('tampilsemua', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampilAll()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+ERROR - 2024-07-02 08:35:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM e...', 0)
+#1 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM e...')
+#2 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM e...')
+#3 C:\xampp\htdocs\dash_mon_dt\app\Controllers\Param.php(33): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...')
+#4 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+#5 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+#6 C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\dash_mon_dt\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\dash_mon_dt\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2024-07-02 08:35:25 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Param.php(33): CodeIgniter\Database\BaseConnection->query('SELECT * FROM equipment WHERE status= ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:35:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM equipment WHERE status= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM equipment WHERE status= ')
+ 3 APPPATH\Controllers\Param.php(33): CodeIgniter\Database\BaseConnection->query('SELECT * FROM equipment WHERE status= ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:35:25 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM equipment WHERE status= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM equipment WHERE status= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM equipment WHERE status= ')
+ 4 APPPATH\Controllers\Param.php(33): CodeIgniter\Database\BaseConnection->query('SELECT * FROM equipment WHERE status= ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:36:15 --> ArgumentCountError: Too few arguments to function App\Controllers\Param::tampil_id(), 0 passed in C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Param.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:38:09 --> ArgumentCountError: Too few arguments to function App\Controllers\Param::tampil_id(), 0 passed in C:\xampp\htdocs\dash_mon_dt\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Param.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:38:41 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Param.php on line 35.
+ 1 APPPATH\Controllers\Param.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Controllers\\Param.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:39:35 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Param.php on line 35.
+ 1 APPPATH\Controllers\Param.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Controllers\\Param.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:39:54 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Param.php on line 35.
+ 1 APPPATH\Controllers\Param.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Controllers\\Param.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:42:38 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Param.php on line 38.
+ 1 APPPATH\Controllers\Param.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\dash_mon_dt\\app\\Controllers\\Param.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')
+CRITICAL - 2024-07-02 08:45:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil_id.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tampil_id.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampil_id', [], true)
+ 3 APPPATH\Controllers\Param.php(40): view('tampil_id', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Param->tampil_id()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Param))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dash_mon_dt\\public\\index.php')

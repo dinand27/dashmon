@@ -1,0 +1,15 @@
+ERROR - 2024-07-08 08:38:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 PRIMARY KEY(`username`)
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_gener...' at line 7 in C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\dash_mon_dt\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\dash_mon_dt\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\dash_mon_dt\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\dash_mon_dt\app\Database\Migrations\2024-07-08-083607_User.php(35): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xampp\htdocs\dash_mon_dt\system\Database\MigrationRunner.php(865): App\Database\Migrations\User->up()
+#6 C:\xampp\htdocs\dash_mon_dt\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\dash_mon_dt\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\dash_mon_dt\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\dash_mon_dt\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\dash_mon_dt\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
