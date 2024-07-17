@@ -11,14 +11,14 @@
             <div class="card-body">
               <form action="<?php echo base_url() ?>./register" method="post">
                 <div class="form-group mt-3">
-                  <input type="text" name="email" class="form-control" placeholder="Email">
+                  <input type="text" name="username" id="username" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" name="namalengkap" class="form-control" placeholder="Full Name">
+                  <input type="text" name="namalengkap" id="passw" class="form-control" placeholder="Full Name">
                 </div>
                 <div class="form-group mt-3">
                 <div class="form-group ">
-                  <input type="password" name="password" class="form-control" placeholder="Password">
+                  <input type="password" name="passw" id="passw" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group mt-3">
                 <div class="form-group ">

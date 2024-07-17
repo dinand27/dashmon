@@ -1,0 +1,11 @@
+__ci_last_regenerate|i:1720672064;error|s:340:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>username Maksimal 20 Karakter</li>
+					<li>passw Minimal 4 Karakter</li>
+					<li>Konfirmasi Password tidak sesuai dengan password</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:5:"error";s:3:"new";s:13:"_ci_old_input";s:3:"new";s:21:"_ci_validation_errors";s:3:"new";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:8:"username";s:23:"dinand.work23@gmail.com";s:11:"namalengkap";s:9:"dins work";s:5:"passw";s:3:"123";}}_ci_validation_errors|a:3:{s:8:"username";s:29:"username Maksimal 20 Karakter";s:5:"passw";s:24:"passw Minimal 4 Karakter";s:13:"password_conf";s:48:"Konfirmasi Password tidak sesuai dengan password";}

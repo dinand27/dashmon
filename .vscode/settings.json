@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 81
+    "liveServer.settings.port": 81,
+    "terminal.explorerKind": "external",
+    "terminal.integrated.automationProfile.osx": {}
 }

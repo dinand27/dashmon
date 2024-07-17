@@ -56,3 +56,157 @@ in SYSTEMPATH\Database\BaseConnection.php on line 428.
  5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-07-11 03:22:21 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dashmondt', 3306, '', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#8 {main}
+CRITICAL - 2024-07-11 03:22:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM equipment WHERE id_project = 1')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 03:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 03:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 03:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 03:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 03:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:32:26 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 94.
+ 1 APPPATH\Controllers\User.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 04:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:38:21 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 94.
+ 1 APPPATH\Controllers\User.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 04:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:38:39 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 94.
+ 1 APPPATH\Controllers\User.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 04:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:43:04 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 94.
+ 1 APPPATH\Controllers\User.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-11 04:44:50 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 94.
+ 1 APPPATH\Controllers\User.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 04:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:44:56 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 94.
+ 1 APPPATH\Controllers\User.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 04:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:52:17 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 94.
+ 1 APPPATH\Controllers\User.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 04:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-11 04:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:55:57 --> ErrorException: Undefined variable $session_data
+in APPPATH\Controllers\User.php on line 99.
+ 1 APPPATH\Controllers\User.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session_data', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 04:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:57:31 --> ErrorException: Undefined property: App\Controllers\User::$session
+in APPPATH\Controllers\User.php on line 99.
+ 1 APPPATH\Controllers\User.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\User::$session', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 04:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:57:50 --> Error: Call to undefined method App\Controllers\User::session()
+in APPPATH\Controllers\User.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 04:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 04:58:29 --> Error: Call to undefined method App\Controllers\User::session()
+in APPPATH\Controllers\User.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-11 05:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-11 05:00:16 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 94.
+ 1 APPPATH\Controllers\User.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\User.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\User->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')

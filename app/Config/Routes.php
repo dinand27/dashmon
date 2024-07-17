@@ -3,7 +3,7 @@
 use CodeIgniter\Router\RouteCollection;
 
 /***
- * @var RouteCollection $routes 
+ * @var RouteCollection $routes  
  */
 $routes->get('/', 'Home::index');
 $routes->get('/home', 'Home::home');
@@ -15,6 +15,7 @@ $routes->get('/login', 'User::login');
 
 $routes->post('/register', 'User::do_register');
 $routes->post('/login', 'User::do_login');
+$routes->get('/logout', 'User::logout');
 
 
 
@@ -48,3 +49,10 @@ $routes->get('equipment/delete/(:any)', 'Equipment::hapusdata/$1');
 $routes->get('chart/edit/(:any)', 'Equipment::formEditchart/$1');
 $routes->post('chart/edit/(:any)', 'Equipment::prosesdatachart');
 $routes->get('chart/delete/(:any)', 'Equipment::hapusdatachart/$1');
+
+$routes->get('/report', 'Report::index');
+// $routes->get('/report-monthly', 'Report::monthly');
+// $routes->get('/report-daily', 'Report::daily');
+$routes->post('/project/(:any)', 'Report::detail/$1');
+$routes->get('/project/(:any)', 'Report::detail/$1');
+

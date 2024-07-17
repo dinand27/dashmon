@@ -29,7 +29,7 @@ class Equipment extends BaseController
             'dataUnit' => $getAlldata,
             'title' => 'Alldata',
         );
-
+        session()->setFlashdata('msg','LOGIN Sukses');
         return view('equipment/index', $data);
     }
 
