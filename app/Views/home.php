@@ -121,9 +121,9 @@
 <canvas id="chartRBDM"></canvas>
 </div>
 <script>
-const ctx3 = document.getElementById('chartRBDM');
+const crbdm = document.getElementById('chartRBDM');
 
-new Chart(ctx3, {
+new Chart(crbdm, {
   plugins: [ChartDataLabels],
   type: 'bar',
   data: {
@@ -171,9 +171,9 @@ new Chart(ctx3, {
 <canvas id="chartRKBM"></canvas>
 </div>
 <script>
-const ctx4 = document.getElementById('chartRKBM');
+const crkbm = document.getElementById('chartRKBM');
 
-new Chart(ctx4, {
+new Chart(crkbm, {
   plugins: [ChartDataLabels],
   type: 'bar',
   data: {
