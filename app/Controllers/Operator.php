@@ -1,4 +1,5 @@
-<?php namespace App\Controllers;
+<?php 
+namespace App\Controllers;
 use App\Models\OperatorModel;
 class Operator extends BaseController
 {
@@ -37,11 +38,13 @@ class Operator extends BaseController
 				$cekid = $db->table('driver')->getWhere(['id'=>$id])->getResult();
 
 				if(count($cekid) > 0) {
-					session()->setFlashdata('message','<b style="color:red">Data Gagal di Import NIS ada yang sama</b>');
+					session()->setFlashdata('message','<b style="color:red">Data Gagal di Import, Duplikat ID</b>');
 				} else {
 	
 				$simpandata = [
-					'id' => $id, 'namadriver' => $namadriver, 'nik'=> $nik
+					'id' => $id, 
+					'namadriver' => $namadriver, 
+					'nik'=> $nik
 				];
 	
 				$db->table('driver')->insert($simpandata);

@@ -138,7 +138,7 @@ class Home extends BaseController
 
         // return view('tampil_project_detail');
     }
-
+ 
     public function tampilAll()
     {
         $db = \Config\Database::connect();

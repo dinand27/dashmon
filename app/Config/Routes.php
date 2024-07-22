@@ -58,3 +58,9 @@ $routes->get('/project/(:any)', 'Report::detail/$1');
 
 $routes->get('/driver', 'Operator::index');
 $routes->post('/driver/simpanExcel', 'Operator::simpanExcel');
+$routes->get('/report', 'Report::laporanHarian');
+$routes->post('/report/simpanExcel', 'Report::simpanExcel');
+$routes->get('/report-daily', 'Report::laporanHarian');
+$routes->get('/report-detail', 'Report::laporandetail');
+$routes->get('/report/detail', 'Report::filter');
+// $routes->post('/report/detail/(:any)', 'Report::laporandetail/$1');

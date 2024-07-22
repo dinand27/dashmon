@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Import Excel Codeigniter</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-</head> 
-<body>
+<?php echo $this->extend('layout/header'); ?>
+<?php echo $this->section('content'); ?>
+<?= $this->include('layout/navbar') ?>
+
 	<div class="container mt-3">
 		<?php
 		if(session()->getFlashdata('message')){
@@ -16,7 +12,7 @@
 		<?php
 		}
 		?>
-		<form method="post" action="driver/simpanExcel" enctype="multipart/form-data">
+		<form method="post" action="report/simpanExcel" enctype="multipart/form-data">
 			<div class="form-group">
 				<label>File Excel</label>
 				<input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
@@ -28,20 +24,25 @@
 		<table class="table table-bordered">
 			<thead>
 				<tr>
-					<th>ID</th>
-					<th>Nama Driver</th>
-					<th>NIK Driver</th>
+					<th>NO</th>
+					<th>TANGGAL</th>
+					<th>ID UNIT</th>
+                    <th>KETERANGAN</th>
+                    <th>STATUS</th>
 				</tr>
 			</thead>
 			<tbody id="contactTable">
 			<?php
-			if(!empty($driver)){
-				foreach($driver as $dt){
+			$no= 1;
+			if(!empty($laporan)){
+				foreach($laporan as $dt){
 				?>
 					<tr>
-						<td><?= $dt['id'] ?></td>
-						<td><?= $dt['namadriver'] ?></td>
-						<td><?= $dt['nik'] ?></td>
+						<td><?= $no++ ?></td>
+						<td><?= $dt['tgl'] ?></td>
+						<td><?= $dt['id_unit'] ?></td>
+                        <td><?= $dt['keterangan'] ?></td>
+                        <td><?= $dt['status'] ?></td>
 					</tr>
 				<?php
 				}
@@ -56,5 +57,8 @@
 			</tbody>
 		</table>
 	</div>
-</body>
-</html>
+
+    
+
+
+    <?php echo $this->endSection(); ?>

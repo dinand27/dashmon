@@ -9,8 +9,7 @@ class ReportModel extends Model
 
     protected $table      = 'report';
     protected $primaryKey = 'id';
-    protected $returnType = 'object';
-    protected $allowedFields = ['idproject', 'tgl','id_unit','keterangan', 'status'];
+    protected $allowedFields = ['id', 'idproject', 'tgl','id_unit','keterangan', 'status'];
 
 
 }
