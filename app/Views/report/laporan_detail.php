@@ -5,15 +5,10 @@
 		
 	<form action="<?php echo base_url('report/detail') ?>" method="get"> 
 	<select name="filter" id="filter" class="form-select" onchange="this.form.submit()">
-		<option selected>Filter Project</option>
-		<option value="1">INTERMEDIET</option>
-		<option value="2">RENTAL BARGING</option>
-		<option value="3">KONTRAK KBM</option>
-		<option value="4">KONTRAK BDM</option>
-		<option value="5">RENTAL KBM</option>
-		<option value="6">RENTAL BDM</option>
-		<option value="7">FEEDING/option>
-		<option value="8">PEMBATUAN MKG/option>
+		<option selected value="0">Filter Project</option>
+		<?php foreach ($listproject as $row): ?>
+		<option value="<?php echo $row['id']?>"> <?php echo $row['id'].'.'.$row['nm_project'] ?></option>
+		<?php endforeach; ?>
 	</select>
 
 

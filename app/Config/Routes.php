@@ -63,4 +63,5 @@ $routes->post('/report/simpanExcel', 'Report::simpanExcel');
 $routes->get('/report-daily', 'Report::laporanHarian');
 $routes->get('/report-detail', 'Report::laporandetail');
 $routes->get('/report/detail', 'Report::filter');
+$routes->get('/init_report', 'Report::init_data');
 // $routes->post('/report/detail/(:any)', 'Report::laporandetail/$1');

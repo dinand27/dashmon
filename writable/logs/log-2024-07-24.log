@@ -1,0 +1,66 @@
+INFO - 2024-07-24 03:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-24 03:09:57 --> ErrorException: Undefined variable $query
+in APPPATH\Controllers\Report.php on line 59.
+ 1 APPPATH\Controllers\Report.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-24 03:14:52 --> ErrorException: Undefined variable $listproject
+in APPPATH\Views\report\laporan_filter.php on line 50.
+ 1 APPPATH\Views\report\laporan_filter.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listproject', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_filter.php', 50)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_filter.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_filter', [], true)
+ 5 APPPATH\Controllers\Report.php(113): view('report/laporan_filter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-24 03:17:34 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\report\laporan_filter.php on line 51.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_filter', [], true)
+ 4 APPPATH\Controllers\Report.php(116): view('report/laporan_filter', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-24 03:19:17 --> ErrorException: Undefined variable $orw
+in APPPATH\Views\report\laporan_filter.php on line 51.
+ 1 APPPATH\Views\report\laporan_filter.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $orw', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_filter.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_filter.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_filter', [], true)
+ 5 APPPATH\Controllers\Report.php(116): view('report/laporan_filter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-24 03:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-24 03:31:01 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\report\laporan_filter.php on line 103.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_filter', [], true)
+ 3 APPPATH\Controllers\Report.php(116): view('report/laporan_filter', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-24 03:31:18 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\report\laporan_filter.php on line 17.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_filter', [], true)
+ 4 APPPATH\Controllers\Report.php(116): view('report/laporan_filter', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')

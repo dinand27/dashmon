@@ -26,6 +26,9 @@ class Report extends BaseController
 	public function laporandetail()
 	{
 		$db      = \Config\Database::connect();
+		$builder_project= $db->table('project');
+		$project= $builder_project->get();
+
 		$builder = $db->table('report');
 		
 		$builder->like('status','OPR');
@@ -53,6 +56,7 @@ class Report extends BaseController
 		$data['tlo']= $tlo->getResultArray();
 		$data['com']= $com->getResultArray();
 		$data['acd']= $acd->getResultArray();
+		$data['listproject'] =$project->getResultArray();
 
 		echo view('report/laporan_detail',$data);
 	}
@@ -60,6 +64,7 @@ class Report extends BaseController
 	public function filter()
 	{
 		$db      = \Config\Database::connect();
+		
         $filter= $this->request->getVar();
         $value=$filter['filter'];
         $query= $db->query("SELECT * FROM report WHERE idproject= '$value' ");
@@ -89,7 +94,8 @@ class Report extends BaseController
 		$query_acd= $db->query("SELECT * FROM report WHERE idproject= '$value' AND status LIKE 'ACD' ");
         $acd= $query_acd->getResult();
 		
-		
+		$proj= $db->query("SELECT * FROM project ");
+        $project= $proj->getResult();
 
 
         $row= array(
@@ -102,6 +108,7 @@ class Report extends BaseController
 			'tlo' => $tlo,
 			'com' => $com,
 			'acd' => $acd,
+			'listproject' =>$project,
         );
 
 		
@@ -163,6 +170,14 @@ class Report extends BaseController
 		}
 
 
+		
+		public function init_data()
+		{
+			$db = \Config\Database::connect();
+		   
+			$db->query("TRUNCATE TABLE report");
+			return redirect()->to(base_url('/report'));
+		}
 
 
 

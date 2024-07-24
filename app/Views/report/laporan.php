@@ -19,11 +19,13 @@
 			</div>
 			<div class="form-group">
 				<button class="btn btn-primary" type="submit">Upload</button>
+				<!-- <a href="<?php echo base_url('init_report'); ?>" class="btn btn-danger" onclick="fungsiInit()">Delete-Report</a>  -->
+
 			</div>
 		</form>
 		<table class="table table-bordered">
 			<thead>
-				<tr>
+				<tr class="text-center">
 					<th>NO</th>
 					<th>TANGGAL</th>
 					<th>ID UNIT</th>
@@ -38,9 +40,9 @@
 				foreach($laporan as $dt){
 				?>
 					<tr>
-						<td><?= $no++ ?></td>
-						<td><?= $dt['tgl'] ?></td>
-						<td><?= $dt['id_unit'] ?></td>
+						<td class="text-center"><?= $no++ ?></td>
+						<td class="text-center"><?= $dt['tgl'] ?></td>
+						<td class="text-center"><?= $dt['id_unit'] ?></td>
                         <td><?= $dt['keterangan'] ?></td>
                         <td><?= $dt['status'] ?></td>
 					</tr>
@@ -60,5 +62,41 @@
 
     
 
+	<script>
+					function fungsiHapus(){
+
+					var del=confirm("Anda Yakin Hapus Data Laporan?");
+					if (del==true){
+					alert ("Data Terhapus")
+					}else{
+						alert("Batal hapus")
+					}
+					return del;
+					}
+
+          
+          function fungsiInit(){
+
+					var del=confirm("SURE FOR RESET Data?");
+					if (del==true){
+					alert ("Data di Reset")
+					}else{
+						alert("Batal Reset")
+					}
+					return del;
+					}
+
+          function logout() {
+          var confirms=confirm("Anda Yakin Logout?");
+					if (confirms==true){
+					alert ("Terima kasih")
+					}else{
+						alert("Batal Logout")
+					}
+					return confirms;
+					}
+          
+</script>
+ 
 
     <?php echo $this->endSection(); ?>
