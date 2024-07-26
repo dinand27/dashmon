@@ -12,6 +12,18 @@
 		<?php endforeach; ?>
 	</select>
 </form>
+
+<div id="tombolshow" class="tombolshow">
+<button class="btn btn-warning">Show</button>
+</div>
+<?php 
+$display=1;
+if($display !=0){
+	echo "tampil ini";
+}else { echo "hilang ini";
+ } 
+?>
+
 	</div>
 
 				<table class="table table-bordered table-hover">
@@ -73,8 +85,6 @@
 			</tbody>
 		</table>
 	</div>
-
-    
 
 
     <?php echo $this->endSection(); ?>
