@@ -2,17 +2,17 @@
 <?php echo $this->section('content'); ?>
 <?= $this->include('layout/navbar') ?>
 	<div class="container mt-3 text-center">
-		
+
+	<div class="d-flex justify-content-start mb-3">
 	<form action="<?php echo base_url('report/detail') ?>" method="get"> 
-	<select name="filter" id="filter" class="form-select" onchange="this.form.submit()">
+	<select name="filter" id="filter" class="btn btn-secondary" onchange="this.form.submit()">
 		<option selected value="0">Filter Project</option>
 		<?php foreach ($listproject as $row): ?>
 		<option value="<?php echo $row['id']?>"> <?php echo $row['id'].'.'.$row['nm_project'] ?></option>
 		<?php endforeach; ?>
 	</select>
-
-
 </form>
+	</div>
 
 				<table class="table table-bordered table-hover">
 			<thead>

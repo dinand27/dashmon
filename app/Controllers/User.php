@@ -82,7 +82,7 @@ class User extends BaseController
         ]);
         return redirect()->to('/login');
     }
-
+ 
     public function do_login()
     {
         $M_user= new UserModel();

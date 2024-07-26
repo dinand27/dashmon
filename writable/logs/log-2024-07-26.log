@@ -1,0 +1,20 @@
+CRITICAL - 2024-07-26 03:04:13 --> ParseError: Unclosed '{' on line 17
+in APPPATH\Views\testing\nestedloop.php on line 27.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/nestedloop', [], true)
+ 3 APPPATH\Controllers\Testing.php(33): view('testing/nestedloop', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->nestedloop()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-26 03:05:25 --> ParseError: Unclosed '{' on line 13
+in APPPATH\Views\testing\nestedloop.php on line 27.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/nestedloop', [], true)
+ 3 APPPATH\Controllers\Testing.php(33): view('testing/nestedloop', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->nestedloop()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')

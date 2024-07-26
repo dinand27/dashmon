@@ -18,7 +18,7 @@ $routes->post('/login', 'User::do_login');
 $routes->get('/logout', 'User::logout');
 
 
-
+ 
 $routes->get('/equipment', 'Equipment::index');
 $routes->get('/tampildata', 'Equipment::data_dashboard');
 $routes->get('/chart', 'Equipment::jum_data_status');
@@ -65,3 +65,9 @@ $routes->get('/report-detail', 'Report::laporandetail');
 $routes->get('/report/detail', 'Report::filter');
 $routes->get('/init_report', 'Report::init_data');
 // $routes->post('/report/detail/(:any)', 'Report::laporandetail/$1');
+
+
+// testing stok
+$routes->get('/testing', 'Testing::index');
+$routes->get('/testing-hasil', 'Testing::cari');
+$routes->get('/testing-loop', 'Testing::nestedloop');

@@ -15,9 +15,6 @@
                 <a class="nav-link active" aria-current="page" href="<?php echo base_url('report') ?>">Report</a> 
                 </li>
                 <li class="nav-item active">
-                <a class="nav-link active" aria-current="page" href="<?php echo base_url('report-daily') ?>">Report Harian</a> 
-                </li>
-                <li class="nav-item active">
                 <a class="nav-link active" aria-current="page" href="<?php echo base_url('report-detail') ?>">Report Detail</a> 
                 </li>
 
