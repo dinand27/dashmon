@@ -52,7 +52,7 @@ class Equipment extends BaseController
     }
 
 
-    public function formEditData($id= false)
+    public function formEditData($id)
     {
         $equipmodel = new EquipmentModel();
         $data_id = $equipmodel->find($id);

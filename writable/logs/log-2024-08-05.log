@@ -1,0 +1,644 @@
+INFO - 2024-08-05 00:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-05 04:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-05 04:17:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(76): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:17:06 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(76): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:17:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 3 APPPATH\Controllers\Report.php(76): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:17:06 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 4 APPPATH\Controllers\Report.php(76): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:19:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:19:20 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:19:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 3 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:19:20 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 4 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:20:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:20:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:20:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 3 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:20:34 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE 'HONG'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 4 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'HMSI\' OR status LIKE \'SA\' 
+		status LIKE \'HONG\'   ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:28:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:28:19 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:28:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 3 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:28:19 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 4 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:30:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:30:02 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:30:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 3 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:30:02 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 4 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:30:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:30:07 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'3\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:30:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'3\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'3\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 3 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'3\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:30:07 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'3\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'3\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'3\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 4 APPPATH\Controllers\Report.php(73): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'3\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:30:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:30:37 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'11\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:30:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'11\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'11\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 3 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'11\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:30:37 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'11\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'11\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'11\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 4 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'11\' AND status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\' ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:32:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%')' at line 2 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:32:53 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%')' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND (status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\') ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:32:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'1\' AND (status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\') ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'1\' AND (status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\') ')
+ 3 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND (status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\') ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:32:53 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'status LIKE '%HONG%')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'1\' AND (status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\') ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'1\' AND (status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\') ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'1\' AND (status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\') ')
+ 4 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND (status LIKE \'%HMSI%\' OR status LIKE \'%SA%\' 
+		status LIKE \'%HONG%\') ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:39:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''HONG'' at line 1 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:39:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''HONG'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND status in \'HONG\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:39:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''HONG'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'1\' AND status in \'HONG\' ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'1\' AND status in \'HONG\' ')
+ 3 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND status in \'HONG\' ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:39:51 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''HONG'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'1\' AND status in \'HONG\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'1\' AND status in \'HONG\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'1\' AND status in \'HONG\' ')
+ 4 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'1\' AND status in \'HONG\' ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:39:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''HONG'' at line 1 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:39:56 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''HONG'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status in \'HONG\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:39:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''HONG'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status in \'HONG\' ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status in \'HONG\' ')
+ 3 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status in \'HONG\' ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:39:56 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''HONG'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'2\' AND status in \'HONG\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status in \'HONG\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status in \'HONG\' ')
+ 4 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status in \'HONG\' ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-05 04:40:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%HONG%'' at line 1 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->filter()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-05 04:40:11 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%HONG%'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status in \'%HONG%\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:40:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%HONG%'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status in \'%HONG%\' ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status in \'%HONG%\' ')
+ 3 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status in \'%HONG%\' ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 04:40:11 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%HONG%'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report WHERE idproject= \'2\' AND status in \'%HONG%\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report WHERE idproject= \'2\' AND status in \'%HONG%\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report WHERE idproject= \'2\' AND status in \'%HONG%\' ')
+ 4 APPPATH\Controllers\Report.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report WHERE idproject= \'2\' AND status in \'%HONG%\' ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-05 04:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-05 04:50:13 --> ErrorException: Undefined array key 5
+in APPPATH\Controllers\Report.php on line 143.
+ 1 APPPATH\Controllers\Report.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 5', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->simpanExcel()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-05 04:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-05 04:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-05 04:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-05 05:01:37 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\report\laporan_filter.php on line 54.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_filter', [], true)
+ 4 APPPATH\Controllers\Report.php(111): view('report/laporan_filter', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 05:01:37 --> [Caused by] ErrorException: Undefined variable $hmsi
+in APPPATH\Views\report\laporan_filter.php on line 54.
+ 1 APPPATH\Views\report\laporan_filter.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hmsi', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_filter.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_filter.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_filter', [], true)
+ 5 APPPATH\Controllers\Report.php(111): view('report/laporan_filter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->filter()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 05:25:06 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\report\laporan_detail.php on line 35.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 4 APPPATH\Controllers\Report.php(61): view('report/laporan_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 05:25:06 --> [Caused by] ErrorException: Undefined variable $breakdown
+in APPPATH\Views\report\laporan_detail.php on line 35.
+ 1 APPPATH\Views\report\laporan_detail.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $breakdown', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 5 APPPATH\Controllers\Report.php(61): view('report/laporan_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 05:25:23 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\report\laporan_detail.php on line 35.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 4 APPPATH\Controllers\Report.php(61): view('report/laporan_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 05:25:23 --> [Caused by] ErrorException: Undefined variable $breakdown
+in APPPATH\Views\report\laporan_detail.php on line 35.
+ 1 APPPATH\Views\report\laporan_detail.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $breakdown', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 5 APPPATH\Controllers\Report.php(61): view('report/laporan_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 05:25:49 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\report\laporan_detail.php on line 35.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 4 APPPATH\Controllers\Report.php(61): view('report/laporan_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 05:25:49 --> [Caused by] ErrorException: Undefined variable $breakdown
+in APPPATH\Views\report\laporan_detail.php on line 35.
+ 1 APPPATH\Views\report\laporan_detail.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $breakdown', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 5 APPPATH\Controllers\Report.php(61): view('report/laporan_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 05:28:56 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\report\laporan_detail.php on line 30.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 4 APPPATH\Controllers\Report.php(58): view('report/laporan_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 05:28:56 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\report\laporan_detail.php on line 30.
+ 1 APPPATH\Views\report\laporan_detail.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 5 APPPATH\Controllers\Report.php(58): view('report/laporan_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')

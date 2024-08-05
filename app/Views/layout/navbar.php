@@ -1,15 +1,11 @@
  <!-- bagian navbar -->
  <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="<?php echo base_url('/') ?>" >
-                <img src="<?php echo base_url() ?>/assets/img/logosam_white.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Monitoring DT 
-            </a>
-            
+           
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                <a class="nav-link active" aria-current="page" href="<?php echo base_url('login') ?>">Home</a>
+                <a class="nav-link active" aria-current="page" href="<?php echo base_url('/') ?>">Home</a>
                 </li>
                 <li class="nav-item active">
                 <a class="nav-link active" aria-current="page" href="<?php echo base_url('report') ?>">Report</a> 
@@ -17,10 +13,14 @@
                 <li class="nav-item active">
                 <a class="nav-link active" aria-current="page" href="<?php echo base_url('report-detail') ?>">Report Detail</a> 
                 </li>
-
-
-
-
+              </ul>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                <a class="navbar-brand" href="<?php echo base_url('login') ?>" >
+                <img src="<?php echo base_url() ?>/assets/img/logosam_white.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                MONITORING DT
+            </a>
+                </li>
               </ul>
             </div>
           </nav>

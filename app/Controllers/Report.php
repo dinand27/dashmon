@@ -33,12 +33,11 @@ class Report extends BaseController
 		
 		$builder->like('status','OPR');
 		$opr= $builder->get();
+
 		$builder->like('status','HMSI');
-		$hmsi= $builder->get();
 		$builder->like('status','SA');
-		$sa= $builder->get();
 		$builder->like('status','HONG');
-		$hong= $builder->get();
+		$breakdown= $builder->get();
 		$builder->like('status','STB');
 		$stb= $builder->get();
 		$builder->like('status','TLO');
@@ -49,9 +48,7 @@ class Report extends BaseController
 		$acd= $builder->get();
 
 		$data['opr']= $opr->getResultArray();
-		$data['hmsi']= $hmsi->getResultArray();
-		$data['sa']= $sa->getResultArray();
-		$data['hong']= $hong->getResultArray();
+		$data['breakdown']= $breakdown->getResultArray();
 		$data['stb']= $stb->getResultArray();
 		$data['tlo']= $tlo->getResultArray();
 		$data['com']= $com->getResultArray();
@@ -73,14 +70,11 @@ class Report extends BaseController
 		$query_opr= $db->query("SELECT * FROM report WHERE idproject= '$value' AND status LIKE 'OPR' ");
         $opr= $query_opr->getResult();
 
-		$query_hmsi= $db->query("SELECT * FROM report WHERE idproject= '$value' AND status LIKE 'HMSI' ");
-        $hmsi= $query_hmsi->getResult();
-
-		$query_sa= $db->query("SELECT * FROM report WHERE idproject= '$value' AND status LIKE 'SA' ");
-        $sa= $query_sa->getResult();
-
-		$query_hong= $db->query("SELECT * FROM report WHERE idproject= '$value' AND status LIKE 'HONG' ");
-        $hong= $query_hong->getResult();
+		$query_breakdown= $db->query("SELECT * FROM report WHERE idproject= '$value' AND (status LIKE 'HMSI' OR status like 'SA'
+		OR status like 'HONG') 
+		
+		");
+        $breakdown= $query_breakdown->getResult();
 
 		$query_stb= $db->query("SELECT * FROM report WHERE idproject= '$value' AND status LIKE 'STB' ");
         $stb= $query_stb->getResult();
@@ -101,9 +95,7 @@ class Report extends BaseController
         $row= array(
             'data' => $data,
 			'opr'=> $opr,
-			'hmsi' => $hmsi,
-			'sa' => $sa,
-			'hong' => $hong,
+			'breakdown' => $breakdown,
 			'stb' => $stb,
 			'tlo' => $tlo,
 			'com' => $com,

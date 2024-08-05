@@ -17,7 +17,7 @@
     <tr>
         <td> <?php echo $d->id_unit?> </td>
         <td> <?php echo $d->keterangan ?></td>
-        <td> <?php echo anchor('testing/add/'.$d->id, '<div class="btn btn-primary">+ </div>') ?> </td>
+        <td><a href="<?php echo base_url('testing/edit/').$d->id ?>"></a> Edit  </td> 
     </tr>
    
     <?php endforeach; ?>

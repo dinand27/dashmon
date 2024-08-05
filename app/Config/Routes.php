@@ -5,6 +5,20 @@ use CodeIgniter\Router\RouteCollection;
 /***
  * @var RouteCollection $routes  
  */
+// testing stok
+$routes->get('/testing', 'Testing::index');
+$routes->get('/testing-hasil', 'Testing::cari');
+$routes->get('/testing-loop', 'Testing::nestedloop'); 
+$routes->get('testing/edit/(:any)', 'Testing::edit/$1');
+
+
+// session testing
+$routes->get('/session', 'Session::index');
+$routes->get('/session-data', 'Session::data_session');
+$routes->get('/session-data-remove', 'Session::data_session_unset');
+$routes->get('/session-data-delete', 'Session::data_session_del');
+$routes->get('/session-add', 'Session::session_add');
+
 $routes->get('/', 'Home::index');
 $routes->get('/home', 'Home::home');
 $routes->get('/tampildashboard', 'Home::tampilAll');
@@ -54,7 +68,6 @@ $routes->get('/report', 'Report::index');
 // $routes->get('/report-monthly', 'Report::monthly');
 // $routes->get('/report-daily', 'Report::daily');
 $routes->post('/project/(:any)', 'Report::detail/$1');
-$routes->get('/project/(:any)', 'Report::detail/$1');
 
 $routes->get('/driver', 'Operator::index');
 $routes->post('/driver/simpanExcel', 'Operator::simpanExcel');
@@ -67,7 +80,7 @@ $routes->get('/init_report', 'Report::init_data');
 // $routes->post('/report/detail/(:any)', 'Report::laporandetail/$1');
 
 
-// testing stok
-$routes->get('/testing', 'Testing::index');
-$routes->get('/testing-hasil', 'Testing::cari');
-$routes->get('/testing-loop', 'Testing::nestedloop');
+
+// testing buy
+$routes->get('testing/pocket)', 'Testing::index');
+$routes->get('testing/edit', 'Testing::edit');

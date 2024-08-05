@@ -3,7 +3,7 @@
 <?= $this->include('layout/navbar') ?>
 	<div class="container mt-3 text-center">
 
-	<div class="d-flex justify-content-start mb-3">
+	<div class="d-flex justify-content-start">
 	<form action="<?php echo base_url('report/detail') ?>" method="get"> 
 	<select name="filter" id="filter" class="btn btn-secondary" onchange="this.form.submit()">
 		<option selected value="0">Filter Project</option>
@@ -12,19 +12,12 @@
 		<?php endforeach; ?>
 	</select>
 </form>
-
-<div id="tombolshow" class="tombolshow">
-<button class="btn btn-warning">Show</button>
-</div>
-<?php 
-$display=1;
-if($display !=0){
-	echo "tampil ini";
-}else { echo "hilang ini";
- } 
-?>
+<div class="d-flex justify-content-end">
+<button class="btn btn-primary">Lokasi Kerja: </button>
 
 	</div>
+
+</div>
 
 				<table class="table table-bordered table-hover">
 			<thead>
@@ -34,54 +27,31 @@ if($display !=0){
 					<th>JUMLAH</th>
 				</tr>
 			</thead>
-			<tbody id="contactTable">
-					<tr>
+			<tbody>
+			<tr class="table-dark">
+
+					<tr class="table-success">
 						<td>1</td>
 						<td>DT BEROPERASI</td>
 						<td><?= count($opr)  ?></td>
 					</tr>
-					<tr>
+					<tr class="table-warning">
 						<td>2</td>
-						<td>BREAKDOWN HMSI</td>
-						<td><?= count($hmsi)  ?></td>
+						<td>BREAKDOWN</td>
+						<td><?= count($breakdown)  ?></td>
 					</tr>
-					<tr>
+					<tr class="table-danger">
 						<td>3</td>
-						<td>BREAKDOWN SA</td>
-						<td><?= count($sa)  ?></td>
-
-					</tr>
-					<tr>
-						<td>4</td>
 						<td>ACCIDENT</td>
 						<td><?= count($acd)  ?></td>
 
 					</tr>
-					<tr>
-						<td>5</td>
-						<td>TLO</td>
-						<td><?= count($tlo)  ?></td>
-
-					</tr>
-					<tr>
-						<td>6</td>
-						<td>COMMISIONING</td>
-						<td><?= count($com)  ?></td>
-
-					</tr>
-					<tr>
-						<td>7</td>
+					<tr class="table-secondary">
+						<td>4</td>
 						<td>STANDBY</td>
 						<td><?= count($stb)  ?></td>
 
 					</tr>
-					<tr>
-						<td>8</td>
-						<td>BREAKDOWN HONGYAN</td>
-						<td><?= count($hong)  ?></td>
-
-					</tr>
-			
 			</tbody>
 		</table>
 	</div>

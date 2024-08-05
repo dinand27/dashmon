@@ -1,0 +1,98 @@
+INFO - 2024-07-27 00:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-27 00:55:03 --> ErrorException: Undefined variable $row
+in APPPATH\Views\testing\hasil.php on line 9.
+ 1 APPPATH\Views\testing\hasil.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/hasil', [], true)
+ 5 APPPATH\Controllers\Testing.php(22): view('testing/hasil')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->cari()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-27 00:56:40 --> ErrorException: Undefined variable $row
+in APPPATH\Views\testing\hasil.php on line 9.
+ 1 APPPATH\Views\testing\hasil.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/hasil', [], true)
+ 5 APPPATH\Controllers\Testing.php(22): view('testing/hasil')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->cari()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-27 00:56:51 --> ErrorException: Undefined variable $row
+in APPPATH\Views\testing\hasil.php on line 9.
+ 1 APPPATH\Views\testing\hasil.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/hasil', [], true)
+ 5 APPPATH\Controllers\Testing.php(22): view('testing/hasil')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->cari()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-27 00:56:52 --> ErrorException: Undefined variable $row
+in APPPATH\Views\testing\hasil.php on line 9.
+ 1 APPPATH\Views\testing\hasil.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/hasil', [], true)
+ 5 APPPATH\Controllers\Testing.php(22): view('testing/hasil')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->cari()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-27 00:56:53 --> ErrorException: Undefined variable $row
+in APPPATH\Views\testing\hasil.php on line 9.
+ 1 APPPATH\Views\testing\hasil.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/hasil', [], true)
+ 5 APPPATH\Controllers\Testing.php(22): view('testing/hasil')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->cari()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-27 00:56:53 --> ErrorException: Undefined variable $row
+in APPPATH\Views\testing\hasil.php on line 9.
+ 1 APPPATH\Views\testing\hasil.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/hasil', [], true)
+ 5 APPPATH\Controllers\Testing.php(22): view('testing/hasil')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->cari()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-07-27 00:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-27 00:57:30 --> ErrorException: Undefined variable $row
+in APPPATH\Views\testing\hasil.php on line 9.
+ 1 APPPATH\Views\testing\hasil.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\hasil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/hasil', [], true)
+ 5 APPPATH\Controllers\Testing.php(22): view('testing/hasil')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->cari()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-07-27 01:24:45 --> ErrorException: Undefined variable $row
+in APPPATH\Views\testing\index.php on line 28.
+ 1 APPPATH\Views\testing\index.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\index.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\testing\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('testing/index', [], true)
+ 5 APPPATH\Controllers\Testing.php(9): view('testing/index')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Testing->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Testing))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
