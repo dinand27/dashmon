@@ -30,10 +30,9 @@ class Report extends BaseController
 		$project= $builder_project->get();
 
 		$builder = $db->table('report');
-		
+		$databes= $builder->get();
 		$builder->like('status','OPR');
 		$opr= $builder->get();
-
 		$builder->like('status','HMSI');
 		$builder->like('status','SA');
 		$builder->like('status','HONG');
@@ -46,7 +45,7 @@ class Report extends BaseController
 		$com= $builder->get();
 		$builder->like('status','ACD');
 		$acd= $builder->get();
-
+		
 		$data['opr']= $opr->getResultArray();
 		$data['breakdown']= $breakdown->getResultArray();
 		$data['stb']= $stb->getResultArray();
@@ -54,6 +53,7 @@ class Report extends BaseController
 		$data['com']= $com->getResultArray();
 		$data['acd']= $acd->getResultArray();
 		$data['listproject'] =$project->getResultArray();
+		$data['databes']= $databes->getResultArray();
 
 		echo view('report/laporan_detail',$data);
 	}
@@ -76,7 +76,7 @@ class Report extends BaseController
 		");
         $breakdown= $query_breakdown->getResult();
 
-		$query_stb= $db->query("SELECT * FROM report WHERE idproject= '$value' AND status LIKE 'STB' ");
+		$query_stb= $db->query("SELECT * FROM report WHERE idproject= '$value' AND (status LIKE 'STB' OR status LIKE 'TLO' OR status LIKE 'COM') ");
         $stb= $query_stb->getResult();
 
 		$query_tlo= $db->query("SELECT * FROM report WHERE idproject= '$value' AND status LIKE 'TLO' ");
@@ -92,13 +92,12 @@ class Report extends BaseController
         $project= $proj->getResult();
 
 
+
         $row= array(
             'data' => $data,
 			'opr'=> $opr,
 			'breakdown' => $breakdown,
 			'stb' => $stb,
-			'tlo' => $tlo,
-			'com' => $com,
 			'acd' => $acd,
 			'listproject' =>$project,
         );

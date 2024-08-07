@@ -27,10 +27,15 @@
 			<thead>
 				<tr class="text-center">
 					<th>NO</th>
-					<th>TANGGAL</th>
 					<th>ID UNIT</th>
+					<th>LOKASI</th>
+					<th>DRIVER</th>
+					<th>STATUS</th>
                     <th>KETERANGAN</th>
-                    <th>STATUS</th>
+					<th>PRESENSI</th>
+					<th>CekOut</th>
+					<th>CekIn</th>
+
 				</tr>
 			</thead>
 			<tbody id="contactTable">
@@ -41,10 +46,15 @@
 				?>
 					<tr>
 						<td class="text-center"><?= $no++ ?></td>
-						<td class="text-center"><?= $dt['tgl'] ?></td>
 						<td class="text-center"><?= $dt['id_unit'] ?></td>
+						<td class="text-center">KBM</td>
+						<td class="text-center">dICKI</td>
+						<td><?= $dt['status'] ?></td>
                         <td><?= $dt['keterangan'] ?></td>
-                        <td><?= $dt['status'] ?></td>
+						<td class="text-center">Ijin</td>
+						<td class="text-center">08.00</td>
+						<td class="text-center">10.00</td>
+
 					</tr>
 				<?php
 				}

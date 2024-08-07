@@ -21,6 +21,23 @@ class Home extends BaseController
 
         $query4= $db->query("SELECT * FROM equipment WHERE id_project = 4");
         $data4= $query4->getResultArray();
+        $query5= $db->query("SELECT * FROM equipment WHERE id_project = 5");
+        $data5= $query5->getResultArray();
+        $query6= $db->query("SELECT * FROM equipment WHERE id_project = 6");
+        $data6= $query6->getResultArray();
+
+        $query7= $db->query("SELECT * FROM equipment WHERE id_project = 7");
+        $data7= $query7->getResultArray();
+
+        $query8= $db->query("SELECT * FROM equipment WHERE id_project = 8");
+        $data8= $query8->getResultArray();
+
+        $query9= $db->query("SELECT * FROM equipment WHERE id_project = 9");
+        $data9= $query9->getResultArray();
+
+        $query10= $db->query("SELECT * FROM equipment WHERE id_project = 10");
+        $data10= $query10->getResultArray();
+
 
 
         $query_accident = $db->query("SELECT * FROM equipment WHERE STATUS = 'Accident' AND id_project=1;");

@@ -642,3 +642,64 @@ in APPPATH\Views\report\laporan_detail.php on line 30.
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 06:51:16 --> ErrorException: Undefined array key "filter"
+in APPPATH\Controllers\Home2.php on line 13.
+ 1 APPPATH\Controllers\Home2.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filter"', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Home2.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 06:52:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home2_index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home2_index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home2_index', [], true)
+ 3 APPPATH\Controllers\Home2.php(11): view('home2_index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 06:53:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home2_index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home2_index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home2_index', [], true)
+ 3 APPPATH\Controllers\Home2.php(11): view('home2_index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 06:53:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home2.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home2.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home2', [], true)
+ 3 APPPATH\Controllers\Home2.php(11): view('home2')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 06:53:49 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\home_2.php on line 17.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_2', [], true)
+ 4 APPPATH\Controllers\Home2.php(11): view('home_2')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-05 06:53:49 --> [Caused by] ErrorException: Undefined variable $kkbm
+in APPPATH\Views\home_2.php on line 17.
+ 1 APPPATH\Views\home_2.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kkbm', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_2.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_2', [], true)
+ 5 APPPATH\Controllers\Home2.php(11): view('home_2')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')

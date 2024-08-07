@@ -17,12 +17,13 @@ $routes->get('/session', 'Session::index');
 $routes->get('/session-data', 'Session::data_session');
 $routes->get('/session-data-remove', 'Session::data_session_unset');
 $routes->get('/session-data-delete', 'Session::data_session_del');
-$routes->get('/session-add', 'Session::session_add');
+$routes->get('/session-add', 'Session::data_session');
 
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home2::index');
 $routes->get('/home', 'Home::home');
 $routes->get('/tampildashboard', 'Home::tampilAll');
 $routes->get('/tampildashboard/filter', 'Home::tampil_id');
+$routes->get('/home2', 'Home2::index');
 
 $routes->get('/register', 'User::register');
 $routes->get('/login', 'User::login');

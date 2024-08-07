@@ -16,7 +16,6 @@
 			<thead>
 				<tr>
 					<th>NO</th>
-					<th>TANGGAL</th>
 					<th>ID UNIT</th>
                     <th>KETERANGAN</th>
                     <th>STATUS</th>
@@ -30,7 +29,6 @@
 				?>
 					<tr>
 						<td><?= $no++ ?></td>
-						<td><?= $dt['tgl'] ?></td>
 						<td><?= $dt['id_unit'] ?></td>
                         <td><?= $dt['keterangan'] ?></td>
                         <td><?= $dt['status'] ?></td>

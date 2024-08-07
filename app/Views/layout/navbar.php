@@ -1,24 +1,24 @@
  <!-- bagian navbar -->
  <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
            
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                <a class="nav-link active" aria-current="page" href="<?php echo base_url('/') ?>">Home</a>
+                <a class="nav-link active" aria-current="page" href="<?php echo base_url('/home2') ?>">Dashboard</a>
                 </li>
                 <li class="nav-item active">
-                <a class="nav-link active" aria-current="page" href="<?php echo base_url('report') ?>">Report</a> 
+                <a class="nav-link active" aria-current="page" href="<?php echo base_url('report-detail') ?>">Tables</a> 
                 </li>
                 <li class="nav-item active">
-                <a class="nav-link active" aria-current="page" href="<?php echo base_url('report-detail') ?>">Report Detail</a> 
+                <a class="nav-link active" aria-current="page" href="<?php echo base_url('report') ?>">Import</a> 
                 </li>
               </ul>
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item active">
-                <a class="navbar-brand" href="<?php echo base_url('login') ?>" >
+                <a class="navbar-brand" href="<?php echo base_url('/') ?>" >
                 <img src="<?php echo base_url() ?>/assets/img/logosam_white.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                MONITORING DT
+                
             </a>
                 </li>
               </ul>

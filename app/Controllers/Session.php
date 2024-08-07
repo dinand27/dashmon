@@ -10,15 +10,18 @@ class Session extends BaseController
     {
         $session = \Config\Services::session();
         $data = array(
-            'user' => 'admin27',
+            'id' => '1',
+            'username' => 'admin27',
             'unit' => 'DT123',
+            'idproject' => 5,
             'retase' => 1,
             'tonase' => '50000',
         );
-        $session->set('username',$data['user'] );
+        $session->set('username',$data['username'] );
         $session->set('unit',$data['unit'] );
-        $session->set('ret',$data['retase'] );
-        $session->set('ton',$data['tonase'] );
+        $session->set('retase',$data['retase'] );
+        $session->set('tonase',$data['tonase'] );
+        $session->set('idproject',$data['idproject'] );
         echo 'session up !'; 
         return view('session/index');
 
@@ -27,11 +30,12 @@ class Session extends BaseController
     public function data_session()
     {
         $session= session();
-        if ($session->get('id')){
-            echo 'Username : '.$session->get('user');
-            echo 'id Terpilih : '.$session->get('id');
-            echo 'Project ID : '.$session->get('idproject');
-            echo 'Unit : '.$session->get('unit');
+        if ($session){
+            echo 'username : '.$session->get('username');
+            echo '<br> retase : '.$session->get('retase');
+            echo '<br> Project_ID : '.$session->get('idproject');
+            echo '<br> Unit : '.$session->get('unit');
+            echo '<br> ton : '.$session->get('tonase');
         }else { 
             echo 'session kosong';
         } 
@@ -54,7 +58,14 @@ class Session extends BaseController
 
     public function session_add()
     {
-        
+        $newdata = [
+            'username'  => 'johndoe',
+            'unit'     => 'DT-234',
+            'tonase' => '70000',
+        ];
+        $session= session();
+        $session->set($newdata);
+        echo 'session di update';
         return view('session/add');
     }
 
