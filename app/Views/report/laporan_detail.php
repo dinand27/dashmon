@@ -8,7 +8,7 @@
 	<select name="filter" id="filter" class="btn btn-secondary" onchange="this.form.submit()">
 		<option selected value="0">Filter</option>
 		<?php foreach ($listproject as $row): ?>
-		<option value="<?php echo $row['id']?>"> <?php echo $row['id'].'.'.$row['nm_project'] ?></option>
+		<option value="<?php echo $row['id']?>"> <?php echo $row['id'].' . '.$row['nm_project'] ?></option>
 		<?php endforeach; ?>
 	</select>
 </form>
@@ -34,11 +34,6 @@
 	$string_zy= implode(',',$hino_zy);
 	// echo 'Nomor : ', $string_zy;
 	// echo 'Hino Zs', $string;
-	if(str_contains($kata, $string_zy)){
-		echo 'Hino ZS';
-	}else {
-		echo 'Hino ZY';
-	}
 
 } 
 
@@ -65,24 +60,36 @@
 						<td>1</td>
 						<td>DT BEROPERASI</td>
 						<td><?= count($opr)  ?></td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
 					</tr>
 					<tr class="table-warning">
 						<td>2</td>
 						<td>BREAKDOWN</td>
 						<td><?= count($breakdown)  ?></td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
 					</tr>
 					<tr class="table-danger">
 						<td>3</td>
 						<td>ACCIDENT</td>
 						<td><?= count($acd)  ?></td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
 
 					</tr>
 					<tr class="table-primary">
 						<td>4</td>
 						<td>STANDBY</td>
 						<td><?= count($stb)  ?></td>
-
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
 					</tr>
+
 			</tbody>
 		</table>
 	</div>

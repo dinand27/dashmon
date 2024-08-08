@@ -17,7 +17,7 @@ $routes->get('/session', 'Session::index');
 $routes->get('/session-data', 'Session::data_session');
 $routes->get('/session-data-remove', 'Session::data_session_unset');
 $routes->get('/session-data-delete', 'Session::data_session_del');
-$routes->get('/session-add', 'Session::data_session');
+$routes->post('/session-add', 'Session::tambah_session');
 
 $routes->get('/', 'Home2::index');
 $routes->get('/home', 'Home::home');

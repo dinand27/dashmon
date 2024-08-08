@@ -1,7 +1,7 @@
 <?php echo $this->extend('/layout/header'); ?>
 <?php echo $this->section('content'); ?>
 <?= $this->include('/layout/navbar') ?>
-
+<?php echo 'User : ', session()->get('username'); ?>
 <div class="container-fluid">
 <h1> <?php echo $title; ?></h1>
 

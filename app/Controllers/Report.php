@@ -151,8 +151,19 @@ class Report extends BaseController
                     'keterangan ' => $keterangan,
                     'status' => $status,
 				];
+
+				$savereport = [
+					'tanggal' => date('Y-m-d'),
+                    'idreport'=> date('ymd'),
+					'idproject' => $idproject, 
+					'tgl'=> $newDate,
+                    'idunit' => $id_unit,
+                    'keterangan ' => $keterangan,
+                    'status' => $status,
+				];
 	
 				$db->table('report')->insert($simpandata);
+				$db->table('laporan')->insert($savereport);
 				session()->setFlashdata('message','Berhasil import excel'); 
 			}
 		}
@@ -165,9 +176,10 @@ class Report extends BaseController
 		public function init_data()
 		{
 			$db = \Config\Database::connect();
-		   
 			$db->query("TRUNCATE TABLE report");
-			return redirect()->to(base_url('/report'));
+
+			
+			return view('report/laporan_import');
 		}
 
 

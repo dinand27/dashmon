@@ -14,8 +14,8 @@
 		?>
 		<form method="post" action="report/simpanExcel" enctype="multipart/form-data">
 			<div class="form-group">
-				<label ><button class="btn btn-warning" onclick="fnImport()" id="btnImport" style="display: block;">Import Exel</button></label>
-				<div id="importdiv" style="display:none;">
+				<label id="btnImport" style="display: none;"><button class="btn btn-warning" onclick="fnImport()">Import Exel</button></label>
+				<div id="importdiv" style="display:block;">
 				<input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
 				<button class="btn btn-primary" type="submit">Upload</button>
 				</div>
@@ -43,33 +43,9 @@
 				</tr>
 			</thead>
 			<tbody id="contactTable">
-			<?php
-			$no= 1;
-			if(!empty($laporan)){
-				foreach($laporan as $dt){
-				?>
-					<tr>
-						<td class="text-center"><?= $no++ ?></td>
-						<td class="text-center"><?= $dt['id_unit'] ?></td>
-						<td class="text-center">KBM</td>
-						<td class="text-center">dICKI</td>
-						<td><?= $dt['status'] ?></td>
-                        <td><?= $dt['keterangan'] ?></td>
-						<td class="text-center">Ijin</td>
-						<td class="text-center">08.00</td>
-						<td class="text-center">10.00</td>
-
-					</tr>
-				<?php
-				}
-			}else{
-			?>
 				<tr>
 					<td colspan="3">Tidak ada data</td>		
 				</tr>
-			<?php
-			}
-			?>
 			</tbody>
 		</table>
 	</div>
@@ -114,7 +90,7 @@
 				var div = document.getElementById('importdiv');
 				var btn = document.getElementById('btnImport');
 				// var confirms= confirm("Import Data Baru");
-				var del= confirm("Import Data akan Menimpa Data Lama?");
+				var del= confirm("Import Data Baru");
 				if (del==true){		
 					window.location.href="<?php echo base_url('init_report'); ?>" 
 				}else { alert("batal Import")}

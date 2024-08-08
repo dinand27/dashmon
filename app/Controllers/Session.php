@@ -4,26 +4,62 @@ namespace App\Controllers;
 use App\Models\ReportModel;
 use App\Models\SessionModel;
 
+
 class Session extends BaseController
 {
     public function index()
     {
-        $session = \Config\Services::session();
-        $data = array(
-            'id' => '1',
-            'username' => 'admin27',
-            'unit' => 'DT123',
-            'idproject' => 5,
-            'retase' => 1,
-            'tonase' => '50000',
-        );
-        $session->set('username',$data['username'] );
-        $session->set('unit',$data['unit'] );
-        $session->set('retase',$data['retase'] );
-        $session->set('tonase',$data['tonase'] );
-        $session->set('idproject',$data['idproject'] );
-        echo 'session up !'; 
         return view('session/index');
+
+    }
+
+    public function tambah_session()
+    {
+        $session = session();
+        $id = $_POST['id'];
+        $nama= $_POST['nama'];
+        $unit= $_POST['unit'];
+        $ret= $_POST['retase'];
+        // $aray= array();
+        $aray[]=array(
+            'id' => $id,
+            'nama'  => $nama,
+            'unit'     => $unit,
+            'retase' => $ret
+        );
+
+    //     $merg = array_merge($aray, $aray['new']);           
+    // dd($merg);  
+    if($session->get('id') == $id){
+        echo 'id sdh ada';
+        $tambah = (int)$ret + 1;
+
+        $aray[] = array(
+            'id' => $id,
+            'nama'  => $nama,
+            'unit'     => $unit,
+            'retase' => $tambah
+        );
+
+        $session->set($olddata);
+
+    }else { echo 'id kosong' ;
+        $aray['new'] = array(
+            'id' => $id,
+            'nama'  => $nama,
+            'unit'     => $unit,
+            'retase' => 1
+        );
+
+
+        $gabungan = array_merge($aray, $aray['new']);
+        $json= json_encode($gabungan);
+        var_dump($json);
+        
+    }
+
+       
+        return view('session/data');
 
     }
 
