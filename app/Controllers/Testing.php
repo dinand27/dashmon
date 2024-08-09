@@ -1,6 +1,7 @@
 <?php 
 namespace App\Controllers;
 use App\Models\ReportModel;
+use App\Models\TransaksiModel;
 
 
 
@@ -49,13 +50,29 @@ class Testing extends BaseController
     public function edit($id)
     {
         $reportModel = new ReportModel();
-        $data['detail'] = $reportModel->find($id);
-        // session set
-        $session = \Config\Services::session();
-        $session->set('id',$data['detail']['id'] );
-        $session->set('idproject',$data['detail']['idproject'] );
-        $session->set('unit',$data['detail']['id_unit'] );
-        echo 'Session terbentuk';
+        $data= $reportModel->find($id);
+        // dd($data);
+        $databes= array(
+            'id_unit'=> $data['id_unit'],
+            'idproject'=> $data['idproject'],
+            'keterangan'=> $data['keterangan'],
+            'status'=> $data['status'],
+            'nama_user'=> 'dinand',
+            'id_transaksi'=> 'inv-001'
+        );
+
+
+        // testing untuk simpan transaksi ke databes
+        $trx_model = new TransaksiModel();
+        $trx_model->insert($databes);
+        echo 'Transaksi sukes';
+        return redirect()->to(base_url('testing'));
+        // // session set
+        // $session = \Config\Services::session();
+        // $session->set('id',$data['detail']['id'] );
+        // $session->set('idproject',$data['detail']['idproject'] );
+        // $session->set('unit',$data['detail']['id_unit'] );
+        // echo 'Session terbentuk';
         // return view('testing/detail');
     }
 
