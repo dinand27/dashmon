@@ -47,20 +47,20 @@
       <div class="modal-body">
         <div class="table-responsive">
 
-  <table class="table table-sm table-bordered">
+  <table class="table table-sm table-bordered table-dark">
     <thead>
-      <tr class="text-center">
-        <th>Unit</th>
-        <th>Ket</th>
-        <th>Status</th>
+      <tr class="text-center" >
+        <th>UNIT</th>
+        <th>KET</th>
+        <th>STATUS</th>
       </tr>
     </thead>
     <tbody>
     <?php foreach($data as $dat): ?>
-    <tr  class="text-center">
-      <td><?php echo $dat->id_unit ?> </td>
+    <tr>
+      <td   class="text-center"><?php echo $dat->id_unit ?> </td>
       <td><?php echo $dat->keterangan ?> </td>
-      <td><?php echo $dat->status ?> </td>
+      <td   class="text-center" ><?php echo $dat->status ?> </td> 
     </tr>
     <?php endforeach; ?>
 
@@ -68,7 +68,6 @@
 
  
   </table>
-
 
         </div>
       
@@ -94,16 +93,16 @@
         ], 
         backgroundColor: [
                 'rgba(29, 233, 182, 0.6)',
-                'rgba(255, 152, 0, 0.6)',
                 'rgba(3, 169, 244, 0.6)',
+                'rgba(255, 152, 0, 0.6)',
                 'rgba(216, 27, 96, 0.6)',
 
             ],
             borderColor: [
-                'rgba(216, 27, 96, 1)',
+                'rgba(29, 233, 182, 1)',
                 'rgba(3, 169, 244, 1)',
                 'rgba(255, 152, 0, 1)',
-                'rgba(29, 233, 182, 1)',
+                'rgba(216, 27, 96, 1)',
             ],
         borderWidth: 1
       }]
@@ -134,9 +133,6 @@
 
 
 </div>
-
-
-
 
 
 

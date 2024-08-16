@@ -14,19 +14,22 @@
 		?>
 		<form method="post" action="report/simpanExcel" enctype="multipart/form-data">
 			<div class="form-group">
-				<label ><button class="btn btn-warning" onclick="fnImport()" id="btnImport" style="display: block;">Import Exel</button></label>
+				<label ><button class="btn btn-warning mb-2" onclick="fnImport()" id="btnImport" style="display: block;">Import Exel</button></label>
 				<div id="importdiv" style="display:none;">
 				<input type="file" name="fileexcel" class="form-control" id="file" required accept=".xls, .xlsx" /></p>
 				<button class="btn btn-primary" type="submit">Upload</button>
 				</div>
-				
 			</div>
-			<div class="form-group">
-				
-				<!-- <a href="<?php echo base_url('init_report'); ?>" class="btn btn-danger" onclick="fungsiInit()">Delete-Report</a>  -->
+			<div class="form-group"><!-- <a href="<?php echo base_url('init_report'); ?>" class="btn btn-danger" onclick="fungsiInit()">Delete-Report</a>  -->
 
 			</div>
 		</form>
+		<!-- <form action="">
+		<button class="btn btn-primary">Pilih Tanggal</button>
+			Start Date <input type="text" name="startdate">
+			End Date <input type="text" name="endate">		
+
+		</form> -->
 		<table class="table table-bordered">
 			<thead>
 				<tr class="text-center">

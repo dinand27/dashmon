@@ -43,6 +43,7 @@ class ComposerStaticInitd7277319bc960331d968bd1f878c55c4
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\Console\\' => 26,
+            'SheetDB\\' => 8,
         ),
         'P' => 
         array (
@@ -162,6 +163,10 @@ class ComposerStaticInitd7277319bc960331d968bd1f878c55c4
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'SheetDB\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sheetdb/sheetdb-php/src',
+        ),
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
@@ -172,8 +177,8 @@ class ComposerStaticInitd7277319bc960331d968bd1f878c55c4
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -3809,6 +3814,8 @@ class ComposerStaticInitd7277319bc960331d968bd1f878c55c4
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'SheetDB\\Connection' => __DIR__ . '/..' . '/sheetdb/sheetdb-php/src/Connection.php',
+        'SheetDB\\SheetDB' => __DIR__ . '/..' . '/sheetdb/sheetdb-php/src/SheetDB.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Attribute\\AsCommand' => __DIR__ . '/..' . '/symfony/console/Attribute/AsCommand.php',

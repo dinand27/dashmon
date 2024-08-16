@@ -5,12 +5,11 @@ use CodeIgniter\Router\RouteCollection;
 /***
  * @var RouteCollection $routes  
  */
-// testing stok
+//   stok
 $routes->get('/testing', 'Testing::index');
 $routes->get('/testing-hasil', 'Testing::cari');
 $routes->get('/testing-loop', 'Testing::nestedloop'); 
 $routes->get('testing/edit/(:any)', 'Testing::edit/$1');
-
 
 // session testing
 $routes->get('/session', 'Session::index');
@@ -20,7 +19,7 @@ $routes->get('/session-data-delete', 'Session::data_session_del');
 $routes->post('/session-add', 'Session::tambah_session');
 
 $routes->get('/', 'Home2::index');
-$routes->get('/home', 'Home::home');
+$routes->get('/home', 'Home::index');
 $routes->get('/tampildashboard', 'Home::tampilAll');
 $routes->get('/tampildashboard/filter', 'Home::tampil_id');
 $routes->get('/home2', 'Home2::index');
@@ -31,8 +30,6 @@ $routes->get('/login', 'User::login');
 $routes->post('/register', 'User::do_register');
 $routes->post('/login', 'User::do_login');
 $routes->get('/logout', 'User::logout');
-
-
  
 $routes->get('/equipment', 'Equipment::index');
 $routes->get('/tampildata', 'Equipment::data_dashboard');
@@ -65,23 +62,29 @@ $routes->get('chart/edit/(:any)', 'Equipment::formEditchart/$1');
 $routes->post('chart/edit/(:any)', 'Equipment::prosesdatachart');
 $routes->get('chart/delete/(:any)', 'Equipment::hapusdatachart/$1');
 
-$routes->get('/
-', 'Report::index');
+$routes->get('/', 'Report::index');
 // $routes->get('/report-monthly', 'Report::monthly');
 // $routes->get('/report-daily', 'Report::daily');
 $routes->post('/project/(:any)', 'Report::detail/$1');
 
 $routes->get('/driver', 'Operator::index');
 $routes->post('/driver/simpanExcel', 'Operator::simpanExcel');
-$routes->get('/report', 'Report::laporanHarian');
+$routes->get('/report', 'Report::index');
 $routes->post('/report/simpanExcel', 'Report::simpanExcel');
 $routes->get('/report-daily', 'Report::laporanHarian');
 $routes->get('/report-detail', 'Report::laporandetail');
-$routes->get('/report/detail', 'Report::filter');
+// $routes->get('/report/detail', 'Report::filter');
 $routes->get('/init_report', 'Report::init_data');
-// $routes->post('/report/detail/(:any)', 'Report::laporandetail/$1');
+$routes->get('/rekap', 'Report::rekap_laporan');
 
+$routes->get('/getjson', 'Report::get_datajson');
+$routes->get('/report_rfid', 'Report::index_rfid');
+$routes->post('/report/simpanExcelRfid', 'Report::simpanExcelRfid');
+$routes->get('/init_report_rfid', 'Report::init_data_rfid');
 
+$routes->get('/report_dt', 'Report::index_dt');
+$routes->post('/report/simpanExcelDT', 'Report::simpanExcelDT');
+$routes->get('/init_report_dt', 'Report::init_data_dt');
 
 // testing buy
 $routes->get('testing/pocket)', 'Testing::index');

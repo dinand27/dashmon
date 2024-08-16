@@ -1,0 +1,949 @@
+INFO - 2024-08-15 01:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-15 02:08:44 --> mysqli_sql_exception: Table 'dashmondt.report_dt' doesn't exist in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(290): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->index_dt()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 02:08:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'dashmondt.report_dt' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report_dt`
+ORDER BY `id` DESC', [], false)
+ 2 APPPATH\Controllers\Report.php(290): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->index_dt()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 02:08:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'dashmondt.report_dt' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report_dt`
+ORDER BY `id` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report_dt`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report_dt`
+ORDER BY `id` DESC', [], false)
+ 4 APPPATH\Controllers\Report.php(290): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->index_dt()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 02:08:44 --> [Caused by] mysqli_sql_exception: Table 'dashmondt.report_dt' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report_dt`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report_dt`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report_dt`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report_dt`
+ORDER BY `id` DESC', [], false)
+ 5 APPPATH\Controllers\Report.php(290): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->index_dt()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 02:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-15 02:20:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "report/laporan_import_dt.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('report/laporan_import_dt.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_import_dt', [], true)
+ 3 APPPATH\Controllers\Report.php(200): view('report/laporan_import_dt')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->init_data_dt()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 02:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-15 02:30:13 --> ErrorException: Undefined array key "chekpoint_name"
+in APPPATH\Views\report\laporan_dt.php on line 47.
+ 1 APPPATH\Views\report\laporan_dt.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "chekpoint_name"', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_dt.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_dt.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_dt', [], true)
+ 5 APPPATH\Controllers\Report.php(301): view('report/laporan_dt', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->index_dt()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 02:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 02:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-15 03:08:48 --> ErrorException: Undefined variable $session
+in APPPATH\Views\layout\navbar.php on line 29.
+ 1 APPPATH\Views\layout\navbar.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\layout\\navbar.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 5 APPPATH\Views\home_2.php(3): CodeIgniter\View\View->include('layout/navbar')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_2.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_2', [], true)
+ 9 APPPATH\Controllers\Home2.php(22): view('home_2', [...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 03:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-15 03:15:43 --> ParseError: Unclosed '{' on line 22
+in APPPATH\Views\layout\navbar.php on line 72.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 3 APPPATH\Views\home_2.php(3): CodeIgniter\View\View->include('layout/navbar')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_2.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_2', [], true)
+ 7 APPPATH\Controllers\Home2.php(22): view('home_2', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 03:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 03:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 04:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 04:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 04:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 04:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 04:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 04:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 05:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 06:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 06:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 06:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 06:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 06:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 06:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 07:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 07:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 07:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 07:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 07:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-15 07:28:27 --> ErrorException: Undefined variable $dtbuilder
+in APPPATH\Controllers\Report.php on line 63.
+ 1 APPPATH\Controllers\Report.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dtbuilder', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:35:48 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'report/detail', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('report/detail')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('report/detail')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:36:04 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'report/detail', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('report/detail')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('report/detail')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:36:07 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'report/detail', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('report/detail')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('report/detail')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-15 07:36:50 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 07:36:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 2 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:36:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 4 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:36:50 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-15 07:39:13 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 07:39:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 2 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:39:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 4 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:39:13 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 07:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-15 07:39:23 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 07:39:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 2 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:39:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 4 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:39:23 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 07:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-15 07:41:56 --> ErrorException: Undefined variable $hinozs
+in APPPATH\Views\report\laporan_detail.php on line 71.
+ 1 APPPATH\Views\report\laporan_detail.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hinozs', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php', 71)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 5 APPPATH\Controllers\Report.php(73): view('report/laporan_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 07:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-15 07:48:36 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 07:48:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 2 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:48:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZY\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZY\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 4 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:48:36 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZY\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZY\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZY\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 5 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 07:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 07:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-15 07:51:50 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 07:51:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 2 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:51:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 4 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:51:50 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 5 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-15 07:52:18 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 07:52:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 2 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:52:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 4 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:52:18 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 5 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:52:35 --> ErrorException: Undefined variable $hinozy
+in APPPATH\Controllers\Report.php on line 72.
+ 1 APPPATH\Controllers\Report.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hinozy', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 07:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-15 07:54:21 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 07:54:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 2 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:54:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 4 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:54:21 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` = \'HINO ZS\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` = :merk:', [...], false)
+ 5 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-15 07:59:39 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 07:59:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 2 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:59:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 4 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 07:59:39 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZS%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Controllers\Report.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+ERROR - 2024-08-15 08:00:23 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 08:00:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 2 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 08:00:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 4 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 08:00:23 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 08:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-15 08:00:28 --> mysqli_sql_exception: Unknown column 'merk' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-15 08:00:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 2 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 08:00:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 4 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-15 08:00:28 --> [Caused by] mysqli_sql_exception: Unknown column 'merk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `report`
+WHERE `merk` LIKE \'%HINO ZY%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `report`
+WHERE `merk` LIKE :merk: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Controllers\Report.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-15 08:01:20 --> ErrorException: Undefined variable $hinozs
+in APPPATH\Views\report\laporan_detail.php on line 71.
+ 1 APPPATH\Views\report\laporan_detail.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hinozs', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php', 71)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_detail', [], true)
+ 5 APPPATH\Controllers\Report.php(66): view('report/laporan_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->laporandetail()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-15 08:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 08:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 09:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 09:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 09:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 09:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 09:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-15 09:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

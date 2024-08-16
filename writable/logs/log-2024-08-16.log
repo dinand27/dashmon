@@ -1,0 +1,136 @@
+INFO - 2024-08-16 01:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 01:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 01:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 01:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 01:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 01:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 01:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 01:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 01:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 01:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 02:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 02:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 02:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 02:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 02:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 02:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 02:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 02:36:20 --> ErrorException: Undefined array key 10
+in APPPATH\Controllers\Report.php on line 269.
+ 1 APPPATH\Controllers\Report.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 10', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 269)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->simpanExcelRfid()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 02:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 02:37:28 --> mysqli_sql_exception: Column 'jam_masuk' cannot be null in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Report.php(305): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Report->simpanExcelRfid()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#10 {main}
+CRITICAL - 2024-08-16 02:37:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'jam_masuk' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `report_rfid` (`id`, `project`, `eq_name`, `unit`, `jam_keluar`, `jam_masuk`, `driver`, `jam_finger`, `eq_status`, `dt_status`, `driver_status`) VALUES (:id:, :project:, :eq_name:, :unit:, :jam_keluar:, :jam_masuk:, :driver:, :jam_finger:, :eq_status:, :dt_status:, :driver_status:)', [...], false)
+ 2 APPPATH\Controllers\Report.php(305): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->simpanExcelRfid()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 02:37:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'jam_masuk' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `report_rfid` (`id`, `project`, `eq_name`, `unit`, `jam_keluar`, `jam_masuk`, `driver`, `jam_finger`, `eq_status`, `dt_status`, `driver_status`) VALUES (\'1\', \'Mining KBM\', \'HONGYAN KINKAN430\', \'DT-500\', \'7:15:00\', NULL, \'ICCANG\', \'7:05:51\', \'Hadir\', \'DT Keluar Camp\', \'Hadir\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `report_rfid` (`id`, `project`, `eq_name`, `unit`, `jam_keluar`, `jam_masuk`, `driver`, `jam_finger`, `eq_status`, `dt_status`, `driver_status`) VALUES (\'1\', \'Mining KBM\', \'HONGYAN KINKAN430\', \'DT-500\', \'7:15:00\', NULL, \'ICCANG\', \'7:05:51\', \'Hadir\', \'DT Keluar Camp\', \'Hadir\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `report_rfid` (`id`, `project`, `eq_name`, `unit`, `jam_keluar`, `jam_masuk`, `driver`, `jam_finger`, `eq_status`, `dt_status`, `driver_status`) VALUES (:id:, :project:, :eq_name:, :unit:, :jam_keluar:, :jam_masuk:, :driver:, :jam_finger:, :eq_status:, :dt_status:, :driver_status:)', [...], false)
+ 4 APPPATH\Controllers\Report.php(305): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->simpanExcelRfid()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 02:37:28 --> [Caused by] mysqli_sql_exception: Column 'jam_masuk' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `report_rfid` (`id`, `project`, `eq_name`, `unit`, `jam_keluar`, `jam_masuk`, `driver`, `jam_finger`, `eq_status`, `dt_status`, `driver_status`) VALUES (\'1\', \'Mining KBM\', \'HONGYAN KINKAN430\', \'DT-500\', \'7:15:00\', NULL, \'ICCANG\', \'7:05:51\', \'Hadir\', \'DT Keluar Camp\', \'Hadir\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `report_rfid` (`id`, `project`, `eq_name`, `unit`, `jam_keluar`, `jam_masuk`, `driver`, `jam_finger`, `eq_status`, `dt_status`, `driver_status`) VALUES (\'1\', \'Mining KBM\', \'HONGYAN KINKAN430\', \'DT-500\', \'7:15:00\', NULL, \'ICCANG\', \'7:05:51\', \'Hadir\', \'DT Keluar Camp\', \'Hadir\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `report_rfid` (`id`, `project`, `eq_name`, `unit`, `jam_keluar`, `jam_masuk`, `driver`, `jam_finger`, `eq_status`, `dt_status`, `driver_status`) VALUES (\'1\', \'Mining KBM\', \'HONGYAN KINKAN430\', \'DT-500\', \'7:15:00\', NULL, \'ICCANG\', \'7:05:51\', \'Hadir\', \'DT Keluar Camp\', \'Hadir\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `report_rfid` (`id`, `project`, `eq_name`, `unit`, `jam_keluar`, `jam_masuk`, `driver`, `jam_finger`, `eq_status`, `dt_status`, `driver_status`) VALUES (:id:, :project:, :eq_name:, :unit:, :jam_keluar:, :jam_masuk:, :driver:, :jam_finger:, :eq_status:, :dt_status:, :driver_status:)', [...], false)
+ 5 APPPATH\Controllers\Report.php(305): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->simpanExcelRfid()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 02:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 02:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 02:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 02:38:24 --> ErrorException: Undefined array key "chekpoint_name"
+in APPPATH\Views\report\laporan_rfid.php on line 52.
+ 1 APPPATH\Views\report\laporan_rfid.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "chekpoint_name"', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_rfid.php', 52)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\laporan_rfid.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/laporan_rfid', [], true)
+ 5 APPPATH\Controllers\Report.php(239): view('report/laporan_rfid', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->index_rfid()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 02:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 03:10:52 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'report/detail', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('report/detail')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('report/detail')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 03:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 03:11:00 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'report/detail', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('report/detail')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('report/detail')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 03:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 03:11:09 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'report/detail', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('report/detail')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('report/detail')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 03:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 03:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 05:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 06:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 06:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 06:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

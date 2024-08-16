@@ -12,7 +12,7 @@
 		<?php
 		}
 		?>
-		<form method="post" action="report/simpanExcel" enctype="multipart/form-data">
+		<form method="post" action="report_rfid/simpanExcel" enctype="multipart/form-data">
 			<div class="form-group">
 				<label id="btnImport" style="display: none;"><button class="btn btn-warning" onclick="fnImport()">Import Exel</button></label>
 				<div id="importdiv" style="display:block;">

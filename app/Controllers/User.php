@@ -101,7 +101,10 @@ class User extends BaseController
             session()->set('username', $cek['username']);
             session()->set('id', $cek['id']);
             session()->set('namalengkap', $cek['namalengkap']);
-            return redirect()->to(base_url('equipment'));
+            session()->set('role', $cek['role']);
+
+            session()->setFlashdata('msg','sukses');
+            return redirect()->to(base_url(''));
 
         } else {
 

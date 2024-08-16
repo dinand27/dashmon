@@ -18,6 +18,13 @@ class UserModel extends Model
         ->where(array('username' => $username, 'passw' => $password) )
         ->get()->getRowArray();
     }
+
+    function cek_login($table,$where){		
+        $db      = \Config\Database::connect();
+        $builder = $db->table('user');
+        $query = $builder->getWhere($where, $table);
+	}	
+    
 }
 
 ?>

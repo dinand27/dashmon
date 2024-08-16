@@ -1,0 +1,263 @@
+CRITICAL - 2024-08-12 02:11:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "json.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('json.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('json', [], true)
+ 3 APPPATH\Controllers\Report.php(187): view('json')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 02:35:58 --> ErrorException: Undefined variable $ur
+in APPPATH\Controllers\Report.php on line 188.
+ 1 APPPATH\Controllers\Report.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ur', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 02:36:25 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Views\report\json.php on line 20.
+ 1 APPPATH\Views\report\json.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/json', [], true)
+ 5 APPPATH\Controllers\Report.php(193): view('report/json', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 02:46:59 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Views\report\json.php on line 20.
+ 1 APPPATH\Views\report\json.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/json', [], true)
+ 5 APPPATH\Controllers\Report.php(193): view('report/json', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 02:58:47 --> ErrorException: file_get_contents(https://api.github.com/users/Bard): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+in APPPATH\Controllers\Report.php on line 189.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.github.com/users/Bard): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 189)
+ 2 APPPATH\Controllers\Report.php(189): file_get_contents('https://api.github.com/users/Bard')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 02:58:50 --> ErrorException: file_get_contents(https://api.github.com/users/Bard): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+
+in APPPATH\Controllers\Report.php on line 189.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.github.com/users/Bard): Failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 189)
+ 2 APPPATH\Controllers\Report.php(189): file_get_contents('https://api.github.com/users/Bard')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 03:16:35 --> ErrorException: file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+
+in APPPATH\Controllers\Report.php on line 189.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 189)
+ 2 APPPATH\Controllers\Report.php(189): file_get_contents('https://dummy.restapiexample.com/api/v1/employees')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 03:31:33 --> ErrorException: Attempt to read property "No" on string
+in APPPATH\Views\report\json.php on line 22.
+ 1 APPPATH\Views\report\json.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "No" on string', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/json', [], true)
+ 5 APPPATH\Controllers\Report.php(195): view('report/json', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 03:31:47 --> ErrorException: file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+
+in APPPATH\Controllers\Report.php on line 189.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 189)
+ 2 APPPATH\Controllers\Report.php(189): file_get_contents('https://dummy.restapiexample.com/api/v1/employees')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 03:31:55 --> ErrorException: file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+
+in APPPATH\Controllers\Report.php on line 189.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 189)
+ 2 APPPATH\Controllers\Report.php(189): file_get_contents('https://dummy.restapiexample.com/api/v1/employees')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 03:32:12 --> ErrorException: file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+
+in APPPATH\Controllers\Report.php on line 189.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 189)
+ 2 APPPATH\Controllers\Report.php(189): file_get_contents('https://dummy.restapiexample.com/api/v1/employees')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 03:34:26 --> ErrorException: Attempt to read property "employee_age" on string
+in APPPATH\Views\report\json.php on line 22.
+ 1 APPPATH\Views\report\json.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "employee_age" on string', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/json', [], true)
+ 5 APPPATH\Controllers\Report.php(195): view('report/json', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 03:35:17 --> ErrorException: file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+
+in APPPATH\Controllers\Report.php on line 189.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://dummy.restapiexample.com/api/v1/employees): Failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Controllers\\Report.php', 189)
+ 2 APPPATH\Controllers\Report.php(189): file_get_contents('https://dummy.restapiexample.com/api/v1/employees')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 03:35:42 --> ErrorException: Attempt to read property "employee_age" on string
+in APPPATH\Views\report\json.php on line 22.
+ 1 APPPATH\Views\report\json.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "employee_age" on string', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/json', [], true)
+ 5 APPPATH\Controllers\Report.php(195): view('report/json', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 04:14:06 --> ErrorException: Attempt to read property "employee_age" on string
+in APPPATH\Views\report\json.php on line 22.
+ 1 APPPATH\Views\report\json.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "employee_age" on string', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\report\\json.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/json', [], true)
+ 5 APPPATH\Controllers\Report.php(195): view('report/json', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 04:15:39 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Views\report\json.php on line 22.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('report/json', [], true)
+ 4 APPPATH\Controllers\Report.php(195): view('report/json', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Report->get_datajson()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 05:41:40 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'rekapan', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('rekapan')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('rekapan')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 05:42:50 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'rekapan', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('rekapan')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('rekapan')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 05:43:19 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'rekapan', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('rekapan')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('rekapan')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 05:43:27 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'rekapan', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('rekapan')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('rekapan')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-12 05:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-12 05:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-12 06:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-12 06:14:37 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home1', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home1')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home1')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 06:33:34 --> ErrorException: Undefined variable $d
+in APPPATH\Views\home_2.php on line 65.
+ 1 APPPATH\Views\home_2.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $d', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_2.php', 65)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_2', [], true)
+ 5 APPPATH\Controllers\Home2.php(22): view('home_2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 07:06:26 --> ParseError: syntax error, unexpected token "{", expecting "("
+in APPPATH\Views\home_2.php on line 71.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_2', [], true)
+ 3 APPPATH\Controllers\Home2.php(22): view('home_2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-12 07:09:58 --> ParseError: syntax error, unexpected token "{", expecting "("
+in APPPATH\Views\home_2.php on line 71.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_2', [], true)
+ 3 APPPATH\Controllers\Home2.php(22): view('home_2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')

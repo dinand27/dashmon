@@ -3,7 +3,7 @@
         'name' => 'codeigniter4/framework',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '897ad59ef122a2fbc44e779d9619be692a14df2c',
+        'reference' => '1458e07ef591b913fddcd74a72260f504777435e',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'codeigniter4/framework' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '897ad59ef122a2fbc44e779d9619be692a14df2c',
+            'reference' => '1458e07ef591b913fddcd74a72260f504777435e',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -471,6 +471,15 @@
             'install_path' => __DIR__ . '/../sebastian/version',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'sheetdb/sheetdb-php' => array(
+            'pretty_version' => '1.0.3',
+            'version' => '1.0.3.0',
+            'reference' => '1cc8d76e6377adcce71f8c58f3de1f2e3a146e8d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../sheetdb/sheetdb-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'symfony/console' => array(
             'pretty_version' => 'v7.1.2',
