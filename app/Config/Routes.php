@@ -5,6 +5,8 @@ use CodeIgniter\Router\RouteCollection;
 /***
  * @var RouteCollection $routes  
  */
+
+$routes->get('home3', 'Home3::index');
 //   stok
 $routes->get('/testing', 'Testing::index');
 $routes->get('/testing-hasil', 'Testing::cari');
@@ -19,10 +21,10 @@ $routes->get('/session-data-delete', 'Session::data_session_del');
 $routes->post('/session-add', 'Session::tambah_session');
 
 $routes->get('/', 'Home2::index');
-$routes->get('/home', 'Home::index');
+// $routes->get('/home', 'Home::index');
 $routes->get('/tampildashboard', 'Home::tampilAll');
 $routes->get('/tampildashboard/filter', 'Home::tampil_id');
-$routes->get('/home2', 'Home2::index');
+// $routes->get('/home2', 'Home2::index');
 
 $routes->get('/register', 'User::register');
 $routes->get('/login', 'User::login');

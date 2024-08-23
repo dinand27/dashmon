@@ -6,7 +6,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                <a class="nav-link active" aria-current="page" href="<?php echo base_url('/home2') ?>">Dashboard</a>
+                <a class="nav-link active" aria-current="page" href="<?php echo base_url('/') ?>">Dashboard</a>
                 </li>
                 <li class="nav-item active">
                 <a class="nav-link active" aria-current="page" href="<?php echo base_url('report-detail') ?>">Tables</a> 
@@ -26,6 +26,7 @@
             <li><a class="dropdown-item" href="<?php echo base_url('report_rfid') ?>">Import RFID</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url('report_dt') ?>">Import DT</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url('equipment') ?>">Equipment</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('home3') ?>">Dashboard RFID</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="<?php echo base_url('logout') ?>">LogOut</a></li>
           </ul>

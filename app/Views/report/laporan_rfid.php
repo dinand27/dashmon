@@ -35,7 +35,6 @@
 					<th>LOKASI</th>
 					<th>DRIVER</th>
 					<th>STATUS</th>
-                    <th>KETERANGAN</th>
 					<th>PRESENSI</th>
 					<th>CekOut</th>
 					<th>CekIn</th>
@@ -52,8 +51,7 @@
 						<td class="text-center"><?= $dt['unit'] ?></td>
 						<td class="text-center"><?= $dt['project'] ?></td>
 						<td class="text-center"><?= $dt['driver'] ?></td>
-						<td class="text-center"><?= $dt['eq_status'] ?></td>
-						<td class="text-center">Ketarangan</td>
+						<td class="text-center"><?= $dt['dt_status'] ?></td>
 						<td class="text-center"><?= $dt['driver_status'] ?></td>
 						<td class="text-center"><?= $dt['jam_keluar'] ?></td>
 						<td class="text-center"><?= $dt['jam_masuk'] ?></td>

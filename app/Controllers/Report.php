@@ -267,6 +267,7 @@ class Report extends BaseController
 				$eq_status = $row[8];
 				$dt_status = $row[9];
 				$driver_status = $row[10];
+				$idproject= $row[11];
 
 	
 				$db = \Config\Database::connect();
@@ -289,7 +290,7 @@ class Report extends BaseController
 					'eq_status' => $eq_status,
 					'dt_status' => $dt_status,
 					'driver_status' => $driver_status,
-					// 'user' =>$user,
+					'idproject_rfid' =>$idproject,
 				];
 
 				// $savereport = [

@@ -134,3 +134,844 @@ INFO - 2024-08-16 05:26:29 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-08-16 06:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-08-16 06:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-08-16 06:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:00:32 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home2', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home2')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home2')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:00:38 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home2', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home2')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home2')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:01:04 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'report/detail', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('report/detail')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('report/detail')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:01:14 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 07:02:07 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:02:14 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 07:03:29 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 07:04:16 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 07:04:18 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 07:05:40 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 07:05:42 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:05:47 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 07:06:34 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home3', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home3')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home3')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:17:23 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home2', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home2')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home2')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:18:35 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'home2', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('home2')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('home2')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:19:07 --> ErrorException: preg_match(): Compilation failed: unmatched closing parenthesis at offset 15
+in SYSTEMPATH\Router\Router.php on line 424.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 15', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\system\\Router\\Router.php', 424)
+ 2 SYSTEMPATH\Router\Router.php(424): preg_match('#^testing/pocket)$#u', 'report/detail', [])
+ 3 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('report/detail')
+ 4 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('report/detail')
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:28:05 --> ErrorException: Undefined array key "nm_project"
+in APPPATH\Views\home_3.php on line 90.
+ 1 APPPATH\Views\home_3.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nm_project"', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php', 90)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 07:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 07:45:09 --> mysqli_sql_exception: Unknown column 'idproject' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(228): include('C:\\Dokumnt\\web_...')
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\Common.php(1178): CodeIgniter\View\View->render('home_3', Array, true)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(22): view('home_3', Array)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#10 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#13 {main}
+CRITICAL - 2024-08-16 07:45:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idproject' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE idproject = 37 ')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 07:45:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idproject' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report_rfid WHERE idproject = 37 ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report_rfid WHERE idproject = 37 ')
+ 3 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE idproject = 37 ')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 7 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 07:45:09 --> [Caused by] mysqli_sql_exception: Unknown column 'idproject' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report_rfid WHERE idproject = 37 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report_rfid WHERE idproject = 37 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report_rfid WHERE idproject = 37 ')
+ 4 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE idproject = 37 ')
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 8 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:45:25 --> ErrorException: Undefined property: stdClass::$id_unit
+in APPPATH\Views\home_3.php on line 61.
+ 1 APPPATH\Views\home_3.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_unit', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php', 61)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 07:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 07:46:30 --> ErrorException: Undefined property: stdClass::$keterangan
+in APPPATH\Views\home_3.php on line 62.
+ 1 APPPATH\Views\home_3.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$keterangan', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 08:11:52 --> ErrorException: Undefined property: stdClass::$status
+in APPPATH\Views\home_3.php on line 63.
+ 1 APPPATH\Views\home_3.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 08:26:19 --> mysqli_sql_exception: Unknown column 'project' in 'group statement' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#9 {main}
+CRITICAL - 2024-08-16 08:26:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'project' in 'group statement'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Home3.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project_rfid GROUP BY project')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:26:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'project' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM project_rfid GROUP BY project')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM project_rfid GROUP BY project')
+ 3 APPPATH\Controllers\Home3.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project_rfid GROUP BY project')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:26:19 --> [Caused by] mysqli_sql_exception: Unknown column 'project' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM project_rfid GROUP BY project', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM project_rfid GROUP BY project')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM project_rfid GROUP BY project')
+ 4 APPPATH\Controllers\Home3.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM project_rfid GROUP BY project')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 08:26:50 --> ErrorException: Undefined array key "project"
+in APPPATH\Views\home_3.php on line 90.
+ 1 APPPATH\Views\home_3.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php', 90)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 08:30:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(228): include('C:\\Dokumnt\\web_...')
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\Common.php(1178): CodeIgniter\View\View->render('home_3', Array, true)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(22): view('home_3', Array)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#10 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#13 {main}
+CRITICAL - 2024-08-16 08:30:22 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE project = Mining KBM ')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:30:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report_rfid WHERE project = Mining KBM ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report_rfid WHERE project = Mining KBM ')
+ 3 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE project = Mining KBM ')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 7 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:30:22 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report_rfid WHERE project = Mining KBM ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report_rfid WHERE project = Mining KBM ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report_rfid WHERE project = Mining KBM ')
+ 4 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE project = Mining KBM ')
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 8 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 08:30:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Mining KBM'%'' at line 1 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(228): include('C:\\Dokumnt\\web_...')
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\Common.php(1178): CodeIgniter\View\View->render('home_3', Array, true)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(22): view('home_3', Array)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#10 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#13 {main}
+CRITICAL - 2024-08-16 08:30:56 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Mining KBM'%'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE project like \'%\'Mining KBM\'%\' ')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:30:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Mining KBM'%'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report_rfid WHERE project like \'%\'Mining KBM\'%\' ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report_rfid WHERE project like \'%\'Mining KBM\'%\' ')
+ 3 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE project like \'%\'Mining KBM\'%\' ')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 7 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:30:56 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Mining KBM'%'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report_rfid WHERE project like \'%\'Mining KBM\'%\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report_rfid WHERE project like \'%\'Mining KBM\'%\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report_rfid WHERE project like \'%\'Mining KBM\'%\' ')
+ 4 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE project like \'%\'Mining KBM\'%\' ')
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 8 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 08:31:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(228): include('C:\\Dokumnt\\web_...')
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\Common.php(1178): CodeIgniter\View\View->render('home_3', Array, true)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(22): view('home_3', Array)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#10 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#13 {main}
+CRITICAL - 2024-08-16 08:31:06 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:31:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 3 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 7 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:31:06 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 4 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 8 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 08:32:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(228): include('C:\\Dokumnt\\web_...')
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\Common.php(1178): CodeIgniter\View\View->render('home_3', Array, true)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(22): view('home_3', Array)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#10 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#13 {main}
+CRITICAL - 2024-08-16 08:32:52 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE \'project\' LIKE Mining KBM ')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:32:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report_rfid WHERE \'project\' LIKE Mining KBM ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report_rfid WHERE \'project\' LIKE Mining KBM ')
+ 3 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE \'project\' LIKE Mining KBM ')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 7 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:32:52 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM report_rfid WHERE \'project\' LIKE Mining KBM ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM report_rfid WHERE \'project\' LIKE Mining KBM ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM report_rfid WHERE \'project\' LIKE Mining KBM ')
+ 4 APPPATH\Views\home_3.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM report_rfid WHERE \'project\' LIKE Mining KBM ')
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 8 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 08:37:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1 in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(228): include('C:\\Dokumnt\\web_...')
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\Common.php(1178): CodeIgniter\View\View->render('home_3', Array, true)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(22): view('home_3', Array)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#10 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#13 {main}
+CRITICAL - 2024-08-16 08:37:28 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:37:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 3 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 7 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:37:28 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'KBM' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 4 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report WHERE status=\'ACD\' AND idproject= Mining KBM ')
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 8 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 08:46:55 --> mysqli_sql_exception: Unknown column 'idproject_rfid' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(228): include('C:\\Dokumnt\\web_...')
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\Common.php(1178): CodeIgniter\View\View->render('home_3', Array, true)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(22): view('home_3', Array)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#10 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#13 {main}
+CRITICAL - 2024-08-16 08:46:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idproject_rfid' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report WHERE status=\'ACD\' AND idproject_rfid= 1 ')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:46:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idproject_rfid' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report WHERE status=\'ACD\' AND idproject_rfid= 1 ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report WHERE status=\'ACD\' AND idproject_rfid= 1 ')
+ 3 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report WHERE status=\'ACD\' AND idproject_rfid= 1 ')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 7 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:46:55 --> [Caused by] mysqli_sql_exception: Unknown column 'idproject_rfid' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from report WHERE status=\'ACD\' AND idproject_rfid= 1 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report WHERE status=\'ACD\' AND idproject_rfid= 1 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report WHERE status=\'ACD\' AND idproject_rfid= 1 ')
+ 4 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report WHERE status=\'ACD\' AND idproject_rfid= 1 ')
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 8 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 08:47:25 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(228): include('C:\\Dokumnt\\web_...')
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\Common.php(1178): CodeIgniter\View\View->render('home_3', Array, true)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(22): view('home_3', Array)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#10 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#13 {main}
+CRITICAL - 2024-08-16 08:47:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report_rfid WHERE status=\'ACD\' AND idproject= 1 ')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:47:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report_rfid WHERE status=\'ACD\' AND idproject= 1 ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report_rfid WHERE status=\'ACD\' AND idproject= 1 ')
+ 3 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report_rfid WHERE status=\'ACD\' AND idproject= 1 ')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 7 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:47:25 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from report_rfid WHERE status=\'ACD\' AND idproject= 1 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report_rfid WHERE status=\'ACD\' AND idproject= 1 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report_rfid WHERE status=\'ACD\' AND idproject= 1 ')
+ 4 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report_rfid WHERE status=\'ACD\' AND idproject= 1 ')
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 8 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-16 08:48:21 --> mysqli_sql_exception: Unknown column 'idproject' in 'where clause' in C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from r...', 0)
+#1 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from r...')
+#2 C:\Dokumnt\web_project2024\dashmondt-master\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from r...')
+#3 C:\Dokumnt\web_project2024\dashmondt-master\app\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from r...')
+#4 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(228): include('C:\\Dokumnt\\web_...')
+#5 C:\Dokumnt\web_project2024\dashmondt-master\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Dokumnt\web_project2024\dashmondt-master\system\Common.php(1178): CodeIgniter\View\View->render('home_3', Array, true)
+#7 C:\Dokumnt\web_project2024\dashmondt-master\app\Controllers\Home3.php(22): view('home_3', Array)
+#8 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(941): App\Controllers\Home3->index()
+#9 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+#10 C:\Dokumnt\web_project2024\dashmondt-master\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dokumnt\web_project2024\dashmondt-master\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Dokumnt\web_project2024\dashmondt-master\system\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_...')
+#13 {main}
+CRITICAL - 2024-08-16 08:48:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idproject' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report_rfid WHERE dt_status =\'ACD\' AND idproject= 1 ')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 5 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:48:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idproject' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report_rfid WHERE dt_status =\'ACD\' AND idproject= 1 ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report_rfid WHERE dt_status =\'ACD\' AND idproject= 1 ')
+ 3 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report_rfid WHERE dt_status =\'ACD\' AND idproject= 1 ')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 7 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+CRITICAL - 2024-08-16 08:48:21 --> [Caused by] mysqli_sql_exception: Unknown column 'idproject' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * from report_rfid WHERE dt_status =\'ACD\' AND idproject= 1 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from report_rfid WHERE dt_status =\'ACD\' AND idproject= 1 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from report_rfid WHERE dt_status =\'ACD\' AND idproject= 1 ')
+ 4 APPPATH\Views\home_3.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * from report_rfid WHERE dt_status =\'ACD\' AND idproject= 1 ')
+ 5 SYSTEMPATH\View\View.php(228): include('C:\\Dokumnt\\web_project2024\\dashmondt-master\\app\\Views\\home_3.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home_3', [], true)
+ 8 APPPATH\Controllers\Home3.php(22): view('home_3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home3->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home3))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Dokumnt\\web_project2024\\dashmondt-master\\public\\index.php')
+INFO - 2024-08-16 08:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 08:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
