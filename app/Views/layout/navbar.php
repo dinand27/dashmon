@@ -14,6 +14,10 @@
                 <li class="nav-item active">
                 <a class="nav-link active" aria-current="page" href="<?php echo base_url('report') ?>">Import</a> 
                 </li>
+                <li class="nav-item active">
+                <a class="nav-link active" aria-current="page" href="<?php echo base_url('home3') ?>">Dashboard RFID</a> 
+                </li>
+
                 <?php 
                 $sesi= $session->get('role');
                  if($sesi == 'admin') { ?>
@@ -47,9 +51,9 @@
           </nav>
     </div>    <!--end bagian navbar -->
 
-<h6>Data Tanggal : <span id="date" ></span>  
-| Jam :     <span id="time"></span></h6>
-</h6>
+<!-- <h6><span id="date" ></span>  
+      <span id="time"></span></h6>
+</h6> -->
 
 
     <script>
@@ -63,7 +67,7 @@
         let year = date.getFullYear();
         let hours = date.getHours();
         let ampm = hours >= 12 ? "PM" : "AM";
-        hours = hours % 12;
+        hours = hours % 24;
         hours = hours ? hours : 12;
         let minutes = date.getMinutes();
         let seconds = date.getSeconds();
@@ -71,7 +75,7 @@
         let dateString = `${dayName}, ${day} ${monthName} ${year}`;
         document.getElementById("date").innerHTML = dateString;
 
-        let timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+        let timeString = `${hours}:${minutes} `;
         document.getElementById("time").innerHTML = timeString;
       }
 

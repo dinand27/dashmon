@@ -262,12 +262,14 @@ class Report extends BaseController
                 $unit = $row[3];
 				$jam_keluar = $row[4];
 				$jam_masuk = $row[5];
-				$driver = $row[6];
-				$jam_finger = $row[7];
-				$eq_status = $row[8];
-				$dt_status = $row[9];
-				$driver_status = $row[10];
-				$idproject= $row[11];
+				$jam_bd = $row[6];
+				$jam_done = $row[7];
+				$spk = $row[8];
+				$driver = $row[9];
+				$jam_finger = $row[10];
+				$dt_status = $row[11];
+				$driver_status= $row[12];
+				$idproject= $row[13];
 
 	
 				$db = \Config\Database::connect();
@@ -285,9 +287,11 @@ class Report extends BaseController
                     'unit' => $unit,
 					'jam_keluar' => $jam_keluar,
 					'jam_masuk' => $jam_masuk,
+					'jam_bd' => $jam_bd,
+					'jam_done' => $jam_done,
+					'spk' => $spk,
 					'driver' => $driver,
 					'jam_finger' => $jam_finger,
-					'eq_status' => $eq_status,
 					'dt_status' => $dt_status,
 					'driver_status' => $driver_status,
 					'idproject_rfid' =>$idproject,

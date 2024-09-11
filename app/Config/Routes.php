@@ -64,7 +64,7 @@ $routes->get('chart/edit/(:any)', 'Equipment::formEditchart/$1');
 $routes->post('chart/edit/(:any)', 'Equipment::prosesdatachart');
 $routes->get('chart/delete/(:any)', 'Equipment::hapusdatachart/$1');
 
-$routes->get('/', 'Report::index');
+// $routes->get('/', 'Report::index');
 // $routes->get('/report-monthly', 'Report::monthly');
 // $routes->get('/report-daily', 'Report::daily');
 $routes->post('/project/(:any)', 'Report::detail/$1');

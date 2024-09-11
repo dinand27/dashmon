@@ -1,0 +1,13 @@
+#relative-parent{
+  position: relative;
+}
+table{
+  width:100%;
+  border-collapse: collapse; 
+}
+th{
+  position: sticky;
+  top : 0px;
+  background: #555;
+  color : #fff;
+}

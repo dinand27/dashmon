@@ -5,7 +5,10 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <div class="container-fluid">
 <h1 class="d-flex justify-content-center">Monitoring Utilisasi DT</h1>
-
+<div class="text-center"><h6>
+<span id="date" ></span>   <span id="time"></span>
+</h6>
+</div>
 <div class="row justify-content-lg-around">
 
 <?php foreach($project as $p): ?>
@@ -38,7 +41,7 @@
 </div>
   <!-- Modal -->
   <div class="modal fade" id="exampleModal<?php echo $p['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
         <!-- <h5 class="modal-title" id="exampleModalLabel"></h5> -->
@@ -51,16 +54,18 @@
     <thead>
       <tr class="text-center" >
         <th>UNIT</th>
-        <th>KET</th>
         <th>STATUS</th>
+        <th>KET</th>
+
       </tr>
     </thead>
     <tbody>
     <?php foreach($data as $dat): ?>
     <tr>
       <td   class="text-center"><?php echo $dat->id_unit ?> </td>
-      <td><?php echo $dat->keterangan ?> </td>
       <td   class="text-center" ><?php echo $dat->status ?> </td> 
+      <td><?php echo $dat->keterangan ?> </td>
+
     </tr>
     <?php endforeach; ?>
 

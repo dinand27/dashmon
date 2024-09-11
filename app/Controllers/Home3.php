@@ -10,7 +10,7 @@ class Home3 extends BaseController
     {
         $db = \Config\Database::connect();
 
-        $query= $db->query('SELECT * FROM project_rfid');
+        $query= $db->query('SELECT * FROM project_rfid WHERE status=1 ');
         // $query_chart= $db->query('SELECT report.tgl AS tanggal, report.id_unit AS unit, report.status AS STATUS, project.nm_project AS project 
         // FROM report INNER JOIN project ON project.id = report.idproject ');
 

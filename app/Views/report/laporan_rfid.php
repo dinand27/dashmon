@@ -36,8 +36,10 @@
 					<th>DRIVER</th>
 					<th>STATUS</th>
 					<th>PRESENSI</th>
+					<th>SPK</th>
 					<th>CekOut</th>
 					<th>CekIn</th>
+					<th>BD</th>
 				</tr>
 			</thead>
 			<tbody id="contactTable">
@@ -53,8 +55,10 @@
 						<td class="text-center"><?= $dt['driver'] ?></td>
 						<td class="text-center"><?= $dt['dt_status'] ?></td>
 						<td class="text-center"><?= $dt['driver_status'] ?></td>
+						<td class="text-center"><?= $dt['spk'] ?></td>
 						<td class="text-center"><?= $dt['jam_keluar'] ?></td>
 						<td class="text-center"><?= $dt['jam_masuk'] ?></td>
+						<td class="text-center"><?= $dt['jam_bd'] ?></td>
 					</tr>
 				<?php
 				}
