@@ -31,6 +31,7 @@
             <li><a class="dropdown-item" href="<?php echo base_url('report_dt') ?>">Import DT</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url('equipment') ?>">Equipment</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url('home3') ?>">Dashboard RFID</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('home4') ?>">Dashboard Edit</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="<?php echo base_url('logout') ?>">LogOut</a></li>
           </ul>

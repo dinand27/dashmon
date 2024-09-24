@@ -7,6 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('home3', 'Home3::index');
+$routes->get('home4', 'Home4::index');
 //   stok
 $routes->get('/testing', 'Testing::index');
 $routes->get('/testing-hasil', 'Testing::cari');

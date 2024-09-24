@@ -35,10 +35,47 @@ th{
   background-color: #d81b604d;
 }
 
+.container{
+  background-color: #00000;
+
+
+  .sortable th {
+   cursor: pointer;
+}
+.sortable th.no-sort {
+   pointer-events: none;
+}
+.sortable th::after, 
+.sortable th::before {
+ transition: color 0.2s ease-in-out;
+ font-size: 1.2em;
+ color: transparent;
+}
+.sortable th::after {
+   margin-left: 3px;
+   content: '\025B8';
+}
+.sortable th:hover::after {
+   color: inherit;
+}
+.sortable th.dir-d::after {
+   color: inherit;
+   content: '\025BE';
+}
+.sortable th.dir-u::after {
+   color: inherit;
+   content: '\025B4';
+}
+
+
+
+
+}
+
 </style>
 
 <div class="container-fluid">
-<h1 class="d-flex justify-content-center">Monitoring Utilisasi Unit (DT)</h1>
+<h1 class="d-flex justify-content-center">Monitoring Utilisasi Unit (Edit)</h1>
 <div class="text-center"><h6>
 <span id="date" ></span>   <span id="time"></span>
 </h6>
@@ -65,13 +102,16 @@ th{
       <div class="col-md-auto mt-4">
       <div class="card">
        
-<div style="width: 400px; height: auto;">
+<div style="width: 600px; height: auto;">
 
           <!-- Button trigger modal -->
 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $p['id']; ?>">
 <i class="bi bi-text-left"></i>
 </button>
-  <canvas id="<?php echo $p['id']; ?>"></canvas>
+<div class="container">
+<canvas id="<?php echo $p['id']; ?>"></canvas>
+</div>
+  
 </div>
   <!-- Modal -->
   <div class="modal fade"  id="exampleModal<?php echo $p['id']; ?>" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -81,13 +121,13 @@ th{
         <!-- <h5 class="modal-title" id="exampleModalLabel"></h5> -->
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body" style="max-height:60vh;overflow-y:auto;">
+      <div class="modal-body" style="max-height:75vh;overflow-y:auto;">
       <div id="relative-parent">
 
       <!-- <div class="table-responsive"> -->
         <!-- <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script> -->
          
-  <table class="table-responsive" id="myTable">
+  <table class="sortable" id="myTable">
     <thead>
       <tr class="table table-dark" >
         <th class="text-center">UNIT</th>
@@ -99,7 +139,7 @@ th{
         <th class="text-center">BD</th>
         <th class="text-center">DONE</th>
       </tr>
-    </thead>
+    </thead>  
     <tbody>
 
     <?php foreach($data as $dat): ?>
@@ -154,32 +194,40 @@ th{
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+  Chart.defaults.font.size = 16;
+  // Chart.defaults.font.family= "Arial";
   const ctx<?php echo $p['id']; ?> = document.getElementById("<?php echo $p['id']; ?>");
   new Chart(ctx<?php echo $p['id']; ?>, {
     plugins: [ChartDataLabels],
+    
     type: 'bar',
     data: {
-      labels: ['OPR', 'STB', 'BD', 'ACD'],
+      labels: ['ACD','KMS','TS','OPR', 'STB', 'BD'],
       datasets: [{  
         font: {
-                        size: 12
-                    },
+                size: 12
+              },
         label: '<?php echo $p['nm_project'],' | Alokasi Unit : ', count($data) ; ?>',
        data: [
-          <?php echo count($opr),',', count($stb),',', count($bd),',', count($acd) ?>
+          <?php echo count($acd),',', count($acd),',', count($acd),',', count($opr),',',count($stb),',',count($bd) ?>
         ], 
         backgroundColor: [
                 'rgba(29, 233, 182, 0.6)',
                 'rgba(3, 169, 244, 0.6)',
                 'rgba(255, 152, 0, 0.6)',
-                'rgba(216, 27, 96, 0.6)',
+                'rgba(29, 233, 182, 0.6)',
+                'rgba(39, 92, 245, 0.8)',   
+                'rgba(245, 61, 62, 0.7)',
 
             ],
             borderColor: [
-                'rgba(29, 233, 182, 1)',
-                'rgba(3, 169, 244, 1)',
-                'rgba(255, 152, 0, 1)',
-                'rgba(216, 27, 96, 1)',
+              'rgba(255, 152, 0, 0.6)',
+              'rgba(255, 152, 0, 0.6)',
+              'rgba(255, 152, 0, 0.6)',
+              'rgba(255, 152, 0, 0.6)',
+              'rgba(255, 152, 0, 0.6)',
+              'rgba(255, 152, 0, 0.6)',
+
             ],
         borderWidth: 1
       }]
@@ -191,9 +239,8 @@ th{
         }
       }
     }
-  });
+  });  
 </script>
-</div>
       </div>
       <?php endforeach; ?>
       
@@ -207,6 +254,77 @@ th{
 
 </div>
 
+
+
+
+<!-- bats script sort table -->
+
+<script>
+  document.addEventListener('click', function (e) {
+  try {
+    function findElementRecursive(element, tag) {
+      return element.nodeName === tag ? element : 
+       findElementRecursive(element.parentNode, tag)
+    }
+    var descending_th_class = ' dir-d '
+    var ascending_th_class = ' dir-u '
+    var ascending_table_sort_class = 'asc'
+    var regex_dir = / dir-(u|d) /
+    var regex_table = /\bsortable\b/
+    var alt_sort = e.shiftKey || e.altKey
+    var element = findElementRecursive(e.target, 'TH')
+    var tr = findElementRecursive(element, 'TR')
+    var table = findElementRecursive(tr, 'TABLE')
+    function reClassify(element, dir) {
+      element.className = element.className.replace(regex_dir, '') + dir
+    }
+    function getValue(element) {
+      return (
+        (alt_sort && element.getAttribute('data-sort-alt')) || 
+      element.getAttribute('data-sort') || element.innerText
+      )
+    }
+    if (regex_table.test(table.className)) {
+      var column_index
+      var nodes = tr.cells
+      for (var i = 0; i < nodes.length; i++) {
+        if (nodes[i] === element) {
+          column_index = element.getAttribute('data-sort-col') || i
+        } else {
+          reClassify(nodes[i], '')
+        }
+      }
+      var dir = descending_th_class
+      if (
+        element.className.indexOf(descending_th_class) !== -1 ||
+        (table.className.indexOf(ascending_table_sort_class) !== -1 &&
+          element.className.indexOf(ascending_th_class) == -1)
+      ) {
+        dir = ascending_th_class
+      }
+      reClassify(element, dir)
+      var org_tbody = table.tBodies[0]
+      var rows = [].slice.call(org_tbody.rows, 0)
+      var reverse = dir === ascending_th_class
+      rows.sort(function (a, b) {
+        var x = getValue((reverse ? a : b).cells[column_index])
+        var y = getValue((reverse ? b : a).cells[column_index])
+        return isNaN(x - y) ? x.localeCompare(y) : x - y
+      })
+      var clone_tbody = org_tbody.cloneNode()
+      while (rows.length) {
+        clone_tbody.appendChild(rows.splice(0, 1)[0])
+      }
+      table.replaceChild(clone_tbody, org_tbody)
+    }
+  } catch (error) {
+  }
+});
+</script>
+
+
+
+<!-- batas script table -->
 
 
 <?php echo $this->endSection(); ?>
