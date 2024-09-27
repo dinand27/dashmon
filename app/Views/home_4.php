@@ -87,30 +87,74 @@ th{
   <?php
   $db = \Config\Database::connect();
   $idpro= $p['id'];
-  $query= $db->query("SELECT * FROM report_rfid WHERE idproject_rfid = $idpro");
-  $query_acd= $db->query("SELECT * from report_rfid WHERE dt_status ='ACD' AND idproject_rfid= $idpro ");
-  $query_stb= $db->query("SELECT * from report_rfid WHERE dt_status='Standby' AND idproject_rfid= $idpro ");
-  $query_bd= $db->query("SELECT * from report_rfid WHERE (dt_status='HMSI' OR dt_status='SA' OR dt_status= 'HONG' OR dt_status= 'Breakdown') AND idproject_rfid= $idpro ");
-  $query_opr= $db->query("SELECT * from report_rfid WHERE dt_status='DT Keluar Camp' AND idproject_rfid= $idpro ");
+  $query= $db->query("SELECT * FROM report_rfid WHERE newproject = $idpro");
+  $query_acd= $db->query("SELECT * from report_rfid WHERE dt_status ='ACD' AND newproject= $idpro ");
+  $query_stb= $db->query("SELECT * from report_rfid WHERE dt_status='STD' AND newproject= $idpro ");
+  // $query_bd= $db->query("SELECT * from report_rfid WHERE (dt_status='HMSI' OR dt_status='SA' OR dt_status= 'HONG' OR dt_status= 'Breakdown') AND idproject_rfid= $idpro ");
+  $query_bd= $db->query("SELECT * from report_rfid WHERE dt_status='BD'  AND newproject= $idpro ");
+  $query_opr= $db->query("SELECT * from report_rfid WHERE dt_status='OPR' AND newproject= $idpro ");
+  $query_kms= $db->query("SELECT * from report_rfid WHERE dt_status='KMS' AND newproject= $idpro ");
+  $query_ts= $db->query("SELECT * from report_rfid WHERE dt_status='TS' AND newproject= $idpro ");
   $data= $query->getResult(); 
   $acd= $query_acd->getResult();
   $bd= $query_bd->getResult();
   $stb= $query_stb->getResult();
   $opr= $query_opr->getResult(); 
+  $kms= $query_kms->getResult(); 
+  $ts= $query_ts->getResult(); 
+
 ?>
 
       <div class="col-md-auto mt-4">
       <div class="card">
        
 <div style="width: 600px; height: auto;">
+<!-- testing -->
+<div>
+  <?php
+  $countacd= 0;
+  $countbd= 0;
+  $countstb= 0;
+  $countopr= 0;
+  $countkms= 0;
+  $countts= 0;
+    
 
+  if(count($acd) > 0){
+    $countacd= count($acd) ;
+  }else { $countacd= '' ; }
+  
+  if(count($bd) > 0){
+    $countbd= count($bd) ;
+  }else { $countbd= '' ; }
+
+  if(count($stb) > 0){
+    $countstb= count($stb) ;
+  }else { $countstb= '' ; }
+
+  if(count($opr) > 0){
+    $countopr= count($opr) ;
+  }else { $countopr= '' ; }
+  
+  if(count($kms) > 0){
+    $countkms= count($kms) ;
+  }else { $countkms= '' ; }
+  
+  if(count($ts) > 0){
+    $countts= count($ts) ;
+  }else { $countts= '' ; }
+  
+?>
+<!-- testing -->
+
+</div>
           <!-- Button trigger modal -->
 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $p['id']; ?>">
 <i class="bi bi-text-left"></i>
 </button>
-<div class="container">
+<!-- <div class="container"> -->
 <canvas id="<?php echo $p['id']; ?>"></canvas>
-</div>
+<!-- </div> -->
   
 </div>
   <!-- Modal -->
@@ -147,17 +191,23 @@ th{
       $status= "";
       $stat = $dat->dt_status;
       switch ($stat) {
-      case "DT Keluar Camp" :
+      case "OPR" :
       $status= "OPERATION";
       break;
-      case "Standby":
+      case "STD":
         $status= "STANDBY";
       break;
-      case "Breakdown":
+      case "BD":
         $status= "BREAKDOWN";
       break;
-      case "Accident":
+      case "ACD":
         $status= "ACCIDENT";
+        break;
+      case "KMS":
+        $status= "KOMISIONING";
+        break;
+      case "TS":
+        $status= "TEKOR SOLAR";
         break;
       default:
       $status= "uNDIFINe";
@@ -194,11 +244,10 @@ th{
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  Chart.defaults.font.size = 16;
+  Chart.defaults.font.size = 14;
   // Chart.defaults.font.family= "Arial";
   const ctx<?php echo $p['id']; ?> = document.getElementById("<?php echo $p['id']; ?>");
   new Chart(ctx<?php echo $p['id']; ?>, {
-    plugins: [ChartDataLabels],
     
     type: 'bar',
     data: {
@@ -207,9 +256,21 @@ th{
         font: {
                 size: 12
               },
-        label: '<?php echo $p['nm_project'],' | Alokasi Unit : ', count($data) ; ?>',
+        label:'',
+        datalabels:{
+          rotation:0,
+          align: 'top',
+          font: {
+            weight:'800',
+            size:12,
+            // lineHeight: 5.5,
+            color: '#000', 
+          }
+        },
        data: [
-          <?php echo count($acd),',', count($acd),',', count($acd),',', count($opr),',',count($stb),',',count($bd) ?>
+          <?php
+            echo $countacd,',', $countkms,',', $countts,',', $countopr,',',$countstb,',',$countbd 
+            ?>
         ], 
         backgroundColor: [
                 'rgba(29, 233, 182, 0.6)',
@@ -232,14 +293,52 @@ th{
         borderWidth: 1
       }]
     },
+    plugins: [ChartDataLabels],
     options: {
+      plugins:{
+        // title:{
+        //   display: true,
+        //   text: ['<?php echo $p['namaproject'], "  | Alokasi Unit :",  count($data) ; ?>'],
+        //   padding:{
+        //     top:10,
+        //     bottom:20
+        //   }
+        // }
+      },
       scales: {
         y: {
-          beginAtZero: true
+          ticks: {
+                    padding: 20 // Jarak antara label sumbu Y dan grafik
+                },
+          min:0,
+          max: <?php 
+          $max= max($countacd, $countkms, $countts, $countopr,$countstb,$countbd); 
+          $persen= 0.3 * (int)$max;
+          echo $persen + (int)$max;
+          ?>, 
+          beginAtZero: true,
+        }
+      },
+      plugins:{
+        legend:{
+          labels:{
+            boxWidth:0,
+          },
+          title:{
+          display: true,
+          text: [
+            '<?php echo $p['namaproject'] ?>',
+            '<?php echo ' Alokasi Unit : ',  count($data) ; ?>'
+          ],
+          padding:{
+            top:5,
+            bottom:5
+          }
+        },
         }
       }
     }
-  });  
+  });
 </script>
       </div>
       <?php endforeach; ?>

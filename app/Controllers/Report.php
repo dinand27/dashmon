@@ -258,18 +258,21 @@ class Report extends BaseController
 				
 				$id = $row[0];
 				$project = $row[1];
-				$eq_name = $row[2];
-                $unit = $row[3];
-				$jam_keluar = $row[4];
-				$jam_masuk = $row[5];
-				$jam_bd = $row[6];
-				$jam_done = $row[7];
-				$spk = $row[8];
-				$driver = $row[9];
-				$jam_finger = $row[10];
-				$dt_status = $row[11];
-				$driver_status= $row[12];
-				$idproject= $row[13];
+				$move_type = $row[2];
+				$eq_name = $row[3];
+                $unit = $row[4];
+				$jam_keluar = $row[5];
+				$jam_masuk = $row[6];
+				$jam_bd = $row[7];
+				$jam_done = $row[8];
+				$spk = $row[9];
+				$driver = $row[10];
+				$jam_finger = $row[11];
+				$dt_status = $row[12];
+				$driver_status= $row[13];
+				$idproject= $row[14];
+				$newproject= $row[15];
+				
 
 	
 				$db = \Config\Database::connect();
@@ -283,6 +286,7 @@ class Report extends BaseController
 				$simpandata = [
                     'id'=> $id,
 					'project' => $project, 
+					'move_type' => $move_type,
 					'eq_name'=> $eq_name,
                     'unit' => $unit,
 					'jam_keluar' => $jam_keluar,
@@ -295,6 +299,8 @@ class Report extends BaseController
 					'dt_status' => $dt_status,
 					'driver_status' => $driver_status,
 					'idproject_rfid' =>$idproject,
+					'newproject' =>$newproject,
+
 				];
 
 				// $savereport = [

@@ -30,7 +30,7 @@
 		<table class="table table-bordered">
 			<thead>
 				<tr class="text-center">
-					<th>NO</th>
+					<!-- <th>NO</th> -->
 					<th>ID UNIT</th>
 					<th>LOKASI</th>
 					<th>DRIVER</th>
@@ -49,7 +49,7 @@
 				foreach($laporan as $dt){
 				?>
 					<tr>
-						<td class="text-center"><?= $no++ ?></td>
+						<!-- <td class="text-center"><?= $no++ ?></td> -->
 						<td class="text-center"><?= $dt['unit'] ?></td>
 						<td class="text-center"><?= $dt['project'] ?></td>
 						<td class="text-center"><?= $dt['driver'] ?></td>

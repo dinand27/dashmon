@@ -52,14 +52,19 @@ th{
   $idpro= $p['id'];
   $query= $db->query("SELECT * FROM report_rfid WHERE idproject_rfid = $idpro");
   $query_acd= $db->query("SELECT * from report_rfid WHERE dt_status ='ACD' AND idproject_rfid= $idpro ");
-  $query_stb= $db->query("SELECT * from report_rfid WHERE dt_status='Standby' AND idproject_rfid= $idpro ");
-  $query_bd= $db->query("SELECT * from report_rfid WHERE (dt_status='HMSI' OR dt_status='SA' OR dt_status= 'HONG' OR dt_status= 'Breakdown') AND idproject_rfid= $idpro ");
-  $query_opr= $db->query("SELECT * from report_rfid WHERE dt_status='DT Keluar Camp' AND idproject_rfid= $idpro ");
+  $query_stb= $db->query("SELECT * from report_rfid WHERE dt_status='STD' AND idproject_rfid= $idpro ");
+  // $query_bd= $db->query("SELECT * from report_rfid WHERE (dt_status='HMSI' OR dt_status='SA' OR dt_status= 'HONG' OR dt_status= 'Breakdown') AND idproject_rfid= $idpro ");
+  $query_bd= $db->query("SELECT * from report_rfid WHERE dt_status='BD'  AND idproject_rfid= $idpro ");
+  $query_opr= $db->query("SELECT * from report_rfid WHERE dt_status='OPR' AND idproject_rfid= $idpro ");
+  $query_kms= $db->query("SELECT * from report_rfid WHERE dt_status='KMS' AND idproject_rfid= $idpro ");
+  $query_ts= $db->query("SELECT * from report_rfid WHERE dt_status='TS' AND idproject_rfid= $idpro ");
   $data= $query->getResult(); 
   $acd= $query_acd->getResult();
   $bd= $query_bd->getResult();
   $stb= $query_stb->getResult();
   $opr= $query_opr->getResult(); 
+  $kms= $query_kms->getResult(); 
+  $ts= $query_ts->getResult(); 
 ?>
 
       <div class="col-md-auto mt-4">
@@ -107,17 +112,23 @@ th{
       $status= "";
       $stat = $dat->dt_status;
       switch ($stat) {
-      case "DT Keluar Camp" :
+      case "OPR" :
       $status= "OPERATION";
       break;
-      case "Standby":
+      case "STD":
         $status= "STANDBY";
       break;
-      case "Breakdown":
+      case "BD":
         $status= "BREAKDOWN";
       break;
-      case "Accident":
+      case "ACD":
         $status= "ACCIDENT";
+        break;
+      case "KMS":
+        $status= "KOMISIONING";
+        break;
+      case "TS":
+        $status= "TEKOR SOLAR";
         break;
       default:
       $status= "uNDIFINe";
@@ -164,7 +175,17 @@ th{
         font: {
                         size: 12
                     },
-        label: '<?php echo $p['nm_project'],' | Alokasi Unit : ', count($data) ; ?>',
+                    label: '<?php echo $p['nm_project'],' | Alokasi Unit : ', count($data) ; ?>',
+        datalabels:{
+          rotation:0,
+          align: 'start',
+          font: {
+            weight:'bold',
+            size:12,
+          }
+          
+
+        },
        data: [
           <?php echo count($opr),',', count($stb),',', count($bd),',', count($acd) ?>
         ], 
@@ -203,8 +224,6 @@ th{
  
 
 </div>
-
-
 </div>
 
 
